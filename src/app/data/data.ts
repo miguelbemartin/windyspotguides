@@ -79,14 +79,14 @@ export const categoryData = [
 export const listData = [
     {
         id:1,
-        image:'/img/list-1.jpg',
+        image:'/images/spots/pozo-izquierdo.png',
         user:'/img/team-1.jpg',
         status:'open',
         featured:true,
-        title:'The Big Bumbble Gym',
-        desc:'Cicero famously orated against his political.',
+        title:'Pozo Izquierdo',
+        desc:'The iconic bump and jump spot in the Canary Islands.',
         call:'+42 515 635 4758',
-        loction:'Tokyo Japan',
+        loction:'Gran Canaria, Spain',
         tag:'Fitness',
         tagIcon:FaDumbbell,
         tagIconStyle:'catIcon me-2 cats-1',
@@ -101,10 +101,10 @@ export const listData = [
         user:'/img/team-2.jpg',
         status:'open',
         featured:false,
-        title:'Greenvally Real Estate',
+        title:'El Médano',
         desc:'Cicero famously orated against his political.',
         call:'+42 515 635 6150',
-        loction:'Paris France',
+        loction:'Tenerife, Spain',
         tag:'Real Estate',
         tagIcon:BsHouseCheck,
         tagIconStyle:'catIcon me-2 cats-2',
@@ -115,14 +115,14 @@ export const listData = [
     },
     {
         id:3,
-        image:'/img/list-3.jpg',
+        image:'/images/spots/isleten.jpg',
         user:'/img/team-3.jpg',
         status:'closed',
         featured:true,
-        title:'Shree Wedding Planner',
+        title:'Isleten',
         desc:'Cicero famously orated against his political.',
         call:'+42 515 635 4785',
-        loction:'Toronto Canada',
+        loction:'Isenthal, Uri, Switzerland',
         tag:'Weddings',
         tagIcon:BsLamp,
         tagIconStyle:'catIcon me-2 cats-3',
@@ -137,7 +137,7 @@ export const listData = [
         user:'/img/team-4.jpg',
         status:'open',
         featured:false,
-        title:'The Blue Ley Light',
+        title:'Gruissan',
         desc:'Cicero famously orated against his political.',
         call:'+42 515 635 6358',
         loction:'Sydney Australia',
@@ -155,7 +155,7 @@ export const listData = [
         user:'/img/team-5.jpg',
         status:'close',
         featured:true,
-        title:'Shreya Study Center',
+        title:'Almanarre',
         desc:'Cicero famously orated against his political.',
         call:'+42 515 635 0210',
         loction:'Berlin Germany',
@@ -173,7 +173,7 @@ export const listData = [
         user:'/img/team-6.jpg',
         status:'open',
         featured:false,
-        title:'Mahroom Garage & Workshop',
+        title:'Garda Lake',
         desc:'Cicero famously orated against his political.',
         call:'+42 515 635 3251',
         loction:'Moscow Russia',
@@ -343,7 +343,7 @@ export const blogData = [
     },
 ]
 
-export const footerLink1  = ['About ListingHub','Submit Listing','ListingHub Report','Careers']
+export const footerLink1  = ['About ListingHub','Submit Listing']
 
 export const footerLink2  = ['Trust & Safety','Investor Relations','Terms of Services','Paid Advertising','ListingHub Blog']
 
@@ -354,15 +354,15 @@ export const cityData = [
         image:'/img/city/location-1.jpg',
         gridClass:'col-xl-6 col-lg-6 col-md-4 col-sm-6',
         listing:'16 Listing',
-        name:'Jersey City',
-        tag:['San Diego','New York','Dallas','Denver']
+        name:'Gran Canaria',
+        tag:['Pozo Izquierdo','Vargas','Bahía de Formas','Ojos de Garza']
     },
     {
         image:'/img/city/location-2.jpg',
         gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
         listing:'24 Listing',
-        name:'San Diego',
-        tag:['San Diego','New York','Dallas','Denver']
+        name:'Tenerife',
+        tag:['El Médano','New York','Dallas','Denver']
     },
     {
         image:'/img/city/location-3.jpg',
@@ -389,8 +389,8 @@ export const cityData = [
         image:'/img/city/location-6.jpg',
         gridClass:'col-xl-6 col-lg-6 col-md-4 col-sm-6',
         listing:'12 Listing',
-        name:'San Francisco',
-        tag:['San Diego','New York','Dallas','Denver']
+        name:'Central Switzerland',
+        tag:['Isleten','Flüelen','Sisikon']
     },
 ]
 
@@ -869,7 +869,7 @@ export const helpData = [
         desc:`Think of a news blog that's filled with content hourly on the day of going live.`,
         tag:['Share','Network','Discussion']
     },
-   
+
     {
         icon:BsFileEarmarkTextFill,
         title:'Order',

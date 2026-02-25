@@ -32,17 +32,17 @@ export default function SingleSidebarFour() {
         {
           icon: BsEnvelope,
           title:'Email',
-          desc:'shree.patel@gmail.com'  
+          desc:'shree.patel@gmail.com'
         },
         {
           icon: BiPhone,
           title:'Phone No.',
-          desc:'+41 256 254 5487'  
+          desc:'+41 256 254 5487'
         },
         {
           icon: BsBrowserChrome,
           title:'Website',
-          desc:'www.ListingHub.co.in'  
+          desc:'www.ListingHub.co.in'
         },
     ]
     const social = [
@@ -67,7 +67,7 @@ export default function SingleSidebarFour() {
             style:'color--whatsapp'
         },
     ]
-    
+
   const options = [
     { value: 'slice', label: 'Slice' },
     { value: 'burger', label: 'Burger' },
@@ -94,7 +94,7 @@ export default function SingleSidebarFour() {
   };
   return (
         <div className="sidebarGroups d-flex flex-column gap-4">
-            
+
             <div className="card">
                 <div className="bg-cover card-header ht-150" style={{backgroundImage:`url('/img/avatar-bg.jpg')`}}></div>
                 <div className="card-body mt-n3 p-0">
@@ -133,8 +133,8 @@ export default function SingleSidebarFour() {
                     </div>
                 </div>
             </div>
-            
-            <div className="card overflow-visible">
+
+            {/* <div className="card overflow-visible">
                 <div className="card-header py-3">
                     <div className="headerFirst"><h6><BsCalendar className="me-2"/>Book Your Table</h6></div>
                 </div>
@@ -185,10 +185,10 @@ export default function SingleSidebarFour() {
                         </div>
                     </div>
                 </div>
-                
-            </div>
-            
-            <div className="card">
+
+            </div> */}
+
+            {/* <div className="card">
                 <div className="card-body px-3">
                     <div className="form-group mb-1">
                         <button type="button" className="btn btn-whites border rounded-pill fw-medium w-100"><BsSuitHeart className="me-2"/>Bookmark This Listing</button>
@@ -204,7 +204,7 @@ export default function SingleSidebarFour() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
   )
 }

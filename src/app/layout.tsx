@@ -1,13 +1,12 @@
-import { Metadata } from 'next';
+import {Metadata} from 'next';
 import 'bootstrap/dist/css/bootstrap.css'
 import './style/scss/style.scss'
 import 'animate.css/animate.css'
 
 
-
 export const metadata: Metadata = {
-  title: "ListingHub - Next Ts Business Directory & Listing Template",
-  description: "ListingHub - Next Ts Business Directory & Listing Template",
+  title: "Windy Spots - Find the best forecast to windsurf",
+  description: "Windy Spots - Find the best forecast to windsurf",
 };
 
 export default function RootLayout({

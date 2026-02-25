@@ -47,40 +47,40 @@ export default function ExploreListingOne() {
                         <div className="listingitem-container">
                         <div className="singlelisting-item">
                             <div className="listing-top-item">
-                                <Link href="/single-listing-02" className="topLink">
-                                    <div className="position-absolute start-0 top-0 ms-3 mt-3 z-2">
+                                <Link href="/single-listing-04" className="topLink">
+                                    {/* <div className="position-absolute start-0 top-0 ms-3 mt-3 z-2">
                                         <div className="d-flex align-items-center justify-content-start gap-2">
                                             {item.status === 'open' ? (<span className="badge badge-xs text-uppercase listOpen">Open</span>) :(<span className="badge badge-xs text-uppercase listClose">Closed</span>)}
 
                                             <span className="badge badge-xs badge-transparent">$$$</span>
 
-                                            {item.featured === true && 
+                                            {item.featured === true &&
                                                 <span className="badge badge-xs badge-transparent"><BsStar className="mb-0 me-1"/>Featured</span>
                                             }
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <Image src={item.image} width={0} height={0} sizes='100vw' style={{width:'100%', height:'100%'}} className="img-fluid" alt="Listing Image"/>
                                 </Link>
-                                <div className="position-absolute end-0 bottom-0 me-3 mb-3 z-2">
+                                {/* <div className="position-absolute end-0 bottom-0 me-3 mb-3 z-2">
                                     <Link href="/single-listing-02" className="bookmarkList" data-bs-toggle="tooltip" data-bs-title="Save Listing"><BsSuitHeart className="m-0"/></Link>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="listing-middle-item">
-                                <div className="listing-avatar">
+                                {/* <div className="listing-avatar">
                                     <Link href="/single-listing-02" className="avatarImg"><Image src={item.user} width={0} height={0} sizes='100vw' style={{width:'100%', height:'100%'}} className="img-fluid circle" alt="Avatar"/></Link>
-                                </div>
+                                </div> */}
                                 <div className="listing-details">
-                                    <h4 className="listingTitle"><Link href="/single-listing-02" className="titleLink">{item.title}<span className="verified"><BsPatchCheckFill className="bi bi-patch-check-fill m-0"/></span></Link></h4>
+                                    <h4 className="listingTitle"><Link href="/single-listing-04" className="titleLink">{item.title}<span className="verified"><BsPatchCheckFill className="bi bi-patch-check-fill m-0"/></span></Link></h4>
                                     <p>{item.desc}</p>
                                 </div>
                                 <div className="listing-info-details">
                                     <div className="d-flex align-items-center justify-content-start gap-4">
-                                        <div className="list-calls"><BsTelephone className="mb-0 me-2"/>{item.call}</div>
+                                        {/* <div className="list-calls"><BsTelephone className="mb-0 me-2"/>{item.call}</div> */}
                                         <div className="list-distance"><BsGeoAlt className="mb-0 me-2"/>{item.loction}</div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="listing-footer-item">
+                            {/* <div className="listing-footer-item">
                                 <div className="d-flex align-items-center justify-content-between gap-2">
                                     <div className="catdWraps">
                                         <div className="flex-start">
@@ -99,14 +99,14 @@ export default function ExploreListingOne() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
 
                 )
             })}
-                
+
         </div>
   )
 }
