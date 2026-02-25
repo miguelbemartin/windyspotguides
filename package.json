@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.38.2",
     "@react-google-maps/api": "^2.20.6",
     "animate.css": "^4.1.1",
     "apexcharts": "^5.3.6",

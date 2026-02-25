@@ -7,6 +7,7 @@ import { FiX } from 'react-icons/fi';
 import { BiSolidShoppingBagAlt } from 'react-icons/bi'
 import Link from 'next/link';
 import Image from 'next/image';
+import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 
 
 export default function NavbarLight() {
@@ -179,79 +180,27 @@ export default function NavbarLight() {
                             <li><Link href="#" className="mob-addlisting light" ><BsGeoAltFill className="me-1"/>Add Listing</Link></li>
                         </ul> */}
 
-                        {/* <ul className="nav-menu nav-menu-social align-to-right">
-                            <li>
-                                <Link href="#login" className="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#login"><BsPersonCircle className="fs-6 me-1"/><span className="navCl">Login</span></Link>
-                            </li>
-
-                            <li className="list-buttons light">
-                                <Link href="/register"><BsGeoAlt className="fs-6 me-1"/>Add Windy Spot</Link>
-                            </li>
-                        </ul> */}
+                        <ul className="nav-menu nav-menu-social align-to-right">
+                            <SignedOut>
+                                <li>
+                                    <Link href="/login" className="d-flex align-items-center"><BsPersonCircle className="fs-6 me-1"/><span className="navCl">Login</span></Link>
+                                </li>
+                                <li className="list-buttons light">
+                                    <Link href="/register"><BsPersonPlus className="fs-6 me-1"/>Sign Up</Link>
+                                </li>
+                            </SignedOut>
+                            <SignedIn>
+                                <li className="d-flex align-items-center">
+                                    <UserButton afterSignOutUrl="/" />
+                                </li>
+                            </SignedIn>
+                        </ul>
                     </div>
                 </nav>
             </div>
         </div>
         <div className="clearfix"></div>
 
-        <div className="modal fade" id="login" tabIndex={-1} role="dialog" aria-labelledby="loginmodal" aria-hidden="true">
-            <div className="modal-dialog" id="loginmodal">
-                <div className="modal-content">
-                    <div className="modal-header justify-content-end border-0 pb-0">
-                        <Link href="#" className="square--30 circle bg-light-danger text-danger" data-bs-dismiss="modal" aria-label="Close"><FiX className=""/></Link>
-                    </div>
-
-                    <div className="modal-body px-4">
-                        <div className="text-center mb-5">
-                            <h2>Welcome Back</h2>
-                            <p className="fs-6">Login to manage your account.</p>
-                        </div>
-
-                        <form className="needs-validation px-lg-2" noValidate>
-                            <div className="row align-items-center justify-content-between g-3 mb-4">
-                                <div className="col-xl-6 col-lg-6 col-md-6"><Link href="#" className="btn btn-outline-secondary border rounded-3 text-md px-lg-2 full-width"><img src='/img/google.png' className="img-fluid me-2" width="16" alt=""/>Login with Google</Link></div>
-                                <div className="col-xl-6 col-lg-6 col-md-6"><Link href="#" className="btn btn-outline-secondary border rounded-3 text-md px-lg-2 full-width"><img src='/img/facebook.png' className="img-fluid me-2" width="16" alt=""/>Login with Facebook</Link></div>
-                            </div>
-
-                            <div className="form-group form-border mb-4">
-                                <label className="form-label" htmlFor="email01">Your email</label>
-                                <input type="email" className="form-control" id="email01" placeholder="email@site.com" required/>
-                                <span className="invalid-feedback">Please enter a valid email address.</span>
-                            </div>
-
-                            <div className="mb-4">
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <label className="form-label" htmlFor="pass01">Password</label>
-                                    <a className="link fw-medium text-primary" href="/forgot-password">Forgot Password?</a>
-                                </div>
-
-                                <div className="form-group form-border input-group-merge">
-                                    <input type="password" className="form-control" id="pass01" placeholder="8+ characters required" required/>
-                                </div>
-
-                                <span className="invalid-feedback">Please enter a valid password.</span>
-                            </div>
-
-                            <div className="d-grid mb-3">
-                                <button type="submit" className="btn btn-primary fw-medium">Log in</button>
-                            </div>
-
-                            <div className="text-center">
-                                <p>Don't have an account yet? <a className="link fw-medium text-primary" href="/register">Sign up here</a></p>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div className="modal-footer p-3 border-top">
-                        <div className="d-flex align-items-center justify-content-between gap-3">
-                            <div className="brand px-lg-4 px-3"><Image src='/img/brand/logo-1.png' width={0} height={0} sizes='100vw' style={{width:'100%', height:'auto'}} className="img-fluid" alt=""/></div>
-                            <div className="brand px-lg-4 px-3"><Image src='/img/brand/logo-2.png' width={0} height={0} sizes='100vw' style={{width:'100%', height:'auto'}} className="img-fluid" alt=""/></div>
-                            <div className="brand px-lg-4 px-3"><Image src='/img/brand/logo-3.png' width={0} height={0} sizes='100vw' style={{width:'100%', height:'auto'}} className="img-fluid" alt=""/></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div className="offcanvas offcanvas-end" data-bs-scroll="true" tabIndex={-1} id="cartSlider" aria-labelledby="cartSliderLabel">
             <div className="offcanvas-header border-bottom d-flex justify-content-between">
