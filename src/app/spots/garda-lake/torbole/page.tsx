@@ -3,10 +3,10 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 import NavbarLight from '../../../components/navbar/navbar-light'
-import Descriptions from '../../../components/list-detail/descriptions'
 import WindguruWidget from '../../../components/windguru-widget'
+import WindguruLive from '../../../components/windguru-live'
 import YouTubeEmbed from '../../../components/youtube-embed'
-import Maps from '../../../components/list-detail/maps'
+import WindyEmbed from '../../../components/windy-embed'
 import Footer from '../../../components/footer/footer'
 import BackToTop from '../../../components/back-to-top'
 
@@ -21,7 +21,7 @@ export default function GardaLake() {
     <>
         <NavbarLight/>
 
-        <section className="bg-cover position-relative ht-200 py-0" style={{backgroundImage:`url('/img/list-6.jpg')`}} data-overlay="4">
+        <section className="bg-cover position-relative ht-200 py-0" style={{backgroundImage:`url('/images/spots/klaus-huber-QfMCwSfmiuc-unsplash.jpg')`}} data-overlay="4">
             <div className="container h-100">
                 <div className="row align-items-start">
                     <div className="col-xl-12 col-lg-12 col-md-12 col-12">
@@ -31,11 +31,11 @@ export default function GardaLake() {
                                     <div className="listingFirstinfo d-flex align-items-center justify-content-start gap-3 flex-wrap">
                                         <div className="listingCaptioninfo">
                                             <div className="propertyTitlename d-flex align-items-center gap-2 mb-1">
-                                                <h2 className="fw-semibold text-light mb-0">Garda Lake</h2>
+                                                <h2 className="fw-semibold text-light mb-0">Torbole</h2>
                                             </div>
                                             <div className="listingsbasicInfo">
                                                 <div className="d-flex align-items-center justify-content-start flex-wrap gap-2">
-                                                    <div className="flexItem me-2"><span className="text-md fw-medium text-light"><FaLocationDot className="me-2"/>Lake Garda, Italy</span></div>
+                                                    <div className="flexItem me-2"><span className="text-md fw-medium text-light"><FaLocationDot className="me-2"/>Garda Lake, Italy</span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -59,8 +59,19 @@ export default function GardaLake() {
                             </div>
                             <div id="forecastPanel" className="panel-collapse collapse show">
                             <div className="card-body p-4 pt-2">
-                                <WindguruWidget spotId="TODO" uid="wg_fwdg_TODO_100_gardalake" />
+                                <WindguruWidget spotId="49192" uid="wg_fwdg_49192_100_torbole" />
                             </div>
+                            </div>
+                        </div>
+
+                        <div className="listingSingleblock mb-4" id="livestation">
+                            <div className="SingleblockHeader">
+                                <Link data-bs-toggle="collapse" data-bs-target="#livestationPanel" aria-controls="livestationPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Live Station</h4></Link>
+                            </div>
+                            <div id="livestationPanel" className="panel-collapse collapse show">
+                                <div className="card-body p-4 pt-2">
+                                    <WindguruLive spotId="1202" uid="wglive_1202_torbole" />
+                                </div>
                             </div>
                         </div>
 
@@ -72,18 +83,24 @@ export default function GardaLake() {
                             <div className="card-body p-4 pt-2">
                                 <div className="row g-4">
                                     <div className="col-md-6">
-                                        <YouTubeEmbed videoId="TODO" title="Garda Lake Webcam" />
-                                    </div>
-                                    <div className="col-md-6">
-                                        <YouTubeEmbed videoId="TODO" title="Garda Lake Webcam 2" />
+                                        <YouTubeEmbed videoId="dWxWQlAPY9Y" title="Torbole Webcam" />
                                     </div>
                                 </div>
                             </div>
                             </div>
                         </div>
 
-                        <Descriptions/>
-                        <Maps/>
+                        <div className="listingSingleblock mb-4" id="windy">
+                            <div className="SingleblockHeader">
+                                <Link data-bs-toggle="collapse" data-bs-target="#windyPanel" aria-controls="windyPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Wind Map</h4></Link>
+                            </div>
+                            <div id="windyPanel" className="panel-collapse collapse show">
+                                <div className="card-body p-4 pt-2">
+                                    <WindyEmbed lat={45.876} lon={10.874} title="Torbole Wind Map" />
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

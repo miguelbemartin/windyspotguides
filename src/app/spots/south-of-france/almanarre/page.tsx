@@ -3,10 +3,10 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 import NavbarLight from '../../../components/navbar/navbar-light'
-import Descriptions from '../../../components/list-detail/descriptions'
+
 import WindguruWidget from '../../../components/windguru-widget'
 import YouTubeEmbed from '../../../components/youtube-embed'
-import Maps from '../../../components/list-detail/maps'
+import WindyEmbed from '../../../components/windy-embed'
 import Footer from '../../../components/footer/footer'
 import BackToTop from '../../../components/back-to-top'
 
@@ -21,7 +21,7 @@ export default function Almanarre() {
     <>
         <NavbarLight/>
 
-        <section className="bg-cover position-relative ht-200 py-0" style={{backgroundImage:`url('/img/list-5.jpg')`}} data-overlay="4">
+        <section className="bg-cover position-relative ht-200 py-0" style={{backgroundImage:`url('/images/spots/almanarre.png')`}} data-overlay="4">
             <div className="container h-100">
                 <div className="row align-items-start">
                     <div className="col-xl-12 col-lg-12 col-md-12 col-12">
@@ -59,7 +59,7 @@ export default function Almanarre() {
                             </div>
                             <div id="forecastPanel" className="panel-collapse collapse show">
                             <div className="card-body p-4 pt-2">
-                                <WindguruWidget spotId="TODO" uid="wg_fwdg_TODO_100_almanarre" />
+                                <WindguruWidget spotId="501010" uid="wg_fwdg_501010_100_almanarre" />
                             </div>
                             </div>
                         </div>
@@ -72,18 +72,24 @@ export default function Almanarre() {
                             <div className="card-body p-4 pt-2">
                                 <div className="row g-4">
                                     <div className="col-md-6">
-                                        <YouTubeEmbed videoId="TODO" title="Almanarre Webcam" />
-                                    </div>
-                                    <div className="col-md-6">
-                                        <YouTubeEmbed videoId="TODO" title="Almanarre Webcam 2" />
+                                        <YouTubeEmbed videoId="YK4fczY50Bk" title="Almanarre Webcam" />
                                     </div>
                                 </div>
                             </div>
                             </div>
                         </div>
 
-                        <Descriptions/>
-                        <Maps/>
+                        <div className="listingSingleblock mb-4" id="windy">
+                            <div className="SingleblockHeader">
+                                <Link data-bs-toggle="collapse" data-bs-target="#windyPanel" aria-controls="windyPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Wind Map</h4></Link>
+                            </div>
+                            <div id="windyPanel" className="panel-collapse collapse show">
+                                <div className="card-body p-4 pt-2">
+                                    <WindyEmbed lat={43.046} lon={6.129} title="Almanarre Wind Map" />
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

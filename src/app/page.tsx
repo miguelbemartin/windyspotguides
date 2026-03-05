@@ -30,7 +30,7 @@ export default function IndexTen() {
 
      <NavbarLight/>
 
-    <div className="image-cover hero-header bg-primary position-relative" style={{backgroundImage:`url('/images/zoe-jackson-g8InAXXvcJA-unsplash.jpg')`}} data-overlay="6">
+    <div className="image-cover hero-header bg-primary position-relative" style={{backgroundImage:`url('/images/homepage.jpg')`}} data-overlay="6">
         <div className="container position-relative z-1">
             <div className="row justify-content-center align-items-center mb-5 pt-lg-0 pt-5">
                 <div className="col-xl-10 col-lg-11 col-md-12 col-sm-12">
@@ -64,7 +64,7 @@ export default function IndexTen() {
 
             <div className="row align-items-center justify-content-center mt-5">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-12">
-                    <div className="text-center"><button type="button" className="btn btn-light-primary fw-medium rounded-pill px-md-5">Explore More listings</button></div>
+                    <div className="text-center"><Link href="/spots" className="btn btn-light-primary fw-medium rounded-pill px-md-5">Explore More listings</Link></div>
                 </div>
             </div>
         </div>

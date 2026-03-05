@@ -5,6 +5,7 @@ import Link from 'next/link'
 import NavbarLight from '../../../components/navbar/navbar-light'
 import WindguruWidget from '../../../components/windguru-widget'
 import YouTubeEmbed from '../../../components/youtube-embed'
+import WindyEmbed from '../../../components/windy-embed'
 import Footer from '../../../components/footer/footer'
 import BackToTop from '../../../components/back-to-top'
 
@@ -77,6 +78,17 @@ export default function PozoIzquierdo() {
                                     </div>
                                 </div>
                             </div>
+                            </div>
+                        </div>
+
+                        <div className="listingSingleblock mb-4" id="windy">
+                            <div className="SingleblockHeader">
+                                <Link data-bs-toggle="collapse" data-bs-target="#windyPanel" aria-controls="windyPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Wind Map</h4></Link>
+                            </div>
+                            <div id="windyPanel" className="panel-collapse collapse show">
+                                <div className="card-body p-4 pt-2">
+                                    <WindyEmbed lat={27.840} lon={-15.382} title="Pozo Izquierdo Wind Map" />
+                                </div>
                             </div>
                         </div>
 

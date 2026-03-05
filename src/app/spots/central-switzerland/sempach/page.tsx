@@ -3,10 +3,10 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 import NavbarLight from '../../../components/navbar/navbar-light'
-import Descriptions from '../../../components/list-detail/descriptions'
+
 import WindguruWidget from '../../../components/windguru-widget'
 import YouTubeEmbed from '../../../components/youtube-embed'
-import Maps from '../../../components/list-detail/maps'
+import WindyEmbed from '../../../components/windy-embed'
 import Footer from '../../../components/footer/footer'
 import BackToTop from '../../../components/back-to-top'
 
@@ -89,6 +89,17 @@ export default function Sempach() {
                                     </div>
                                 </div>
                             </div>
+                            </div>
+                        </div>
+
+                        <div className="listingSingleblock mb-4" id="windy">
+                            <div className="SingleblockHeader">
+                                <Link data-bs-toggle="collapse" data-bs-target="#windyPanel" aria-controls="windyPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Wind Map</h4></Link>
+                            </div>
+                            <div id="windyPanel" className="panel-collapse collapse show">
+                                <div className="card-body p-4 pt-2">
+                                    <WindyEmbed lat={47.132} lon={8.190} title="Sempach Wind Map" />
+                                </div>
                             </div>
                         </div>
 

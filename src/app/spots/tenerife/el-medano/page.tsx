@@ -76,6 +76,7 @@ export default function ElMedano() {
                             </div>
                         </div>
 
+
                         <div className="listingSingleblock mb-4" id="windy">
                             <div className="SingleblockHeader">
                                 <Link data-bs-toggle="collapse" data-bs-target="#windyPanel" aria-controls="windyPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Wind Map</h4></Link>

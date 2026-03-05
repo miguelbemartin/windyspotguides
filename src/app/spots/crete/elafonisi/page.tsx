@@ -4,7 +4,9 @@ import Link from 'next/link'
 
 import NavbarLight from '../../../components/navbar/navbar-light'
 import WindguruWidget from '../../../components/windguru-widget'
-import YouTubeEmbed from '../../../components/youtube-embed'
+import WindguruLive from '../../../components/windguru-live'
+
+import WindyEmbed from '../../../components/windy-embed'
 import Footer from '../../../components/footer/footer'
 import BackToTop from '../../../components/back-to-top'
 
@@ -19,7 +21,7 @@ export default function Elafonisi() {
     <>
         <NavbarLight/>
 
-        <section className="bg-cover position-relative ht-200 py-0" style={{backgroundImage:`url('/images/spots/elafonisi.jpg')`}} data-overlay="4">
+        <section className="bg-cover position-relative ht-200 py-0" style={{backgroundImage:`url('/images/spots/dimitris-kiriakakis-yGA8EEV2xtU-unsplash.jpg')`}} data-overlay="4">
             <div className="container h-100">
                 <div className="row align-items-start">
                     <div className="col-xl-12 col-lg-12 col-md-12 col-12">
@@ -57,23 +59,30 @@ export default function Elafonisi() {
                             </div>
                             <div id="forecastPanel" className="panel-collapse collapse show">
                             <div className="card-body p-4 pt-2">
-                                <WindguruWidget spotId="TODO" uid="wg_fwdg_TODO_100_1772298934614" />
+                                <WindguruWidget spotId="49268" uid="wg_fwdg_49268_100_1772298934614" />
                             </div>
                             </div>
                         </div>
 
-                        <div className="listingSingleblock mb-4" id="webcams">
+                        <div className="listingSingleblock mb-4" id="livestation">
                             <div className="SingleblockHeader">
-                                <Link data-bs-toggle="collapse" data-bs-target="#webcamsPanel" aria-controls="webcamsPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Live Webcams</h4></Link>
+                                <Link data-bs-toggle="collapse" data-bs-target="#livestationPanel" aria-controls="livestationPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Live Station</h4></Link>
                             </div>
-                            <div id="webcamsPanel" className="panel-collapse collapse show">
-                            <div className="card-body p-4 pt-2">
-                                <div className="row g-4">
-                                    <div className="col-md-6">
-                                        <YouTubeEmbed videoId="TODO" title="Elafonisi Webcam" />
-                                    </div>
+                            <div id="livestationPanel" className="panel-collapse collapse show">
+                                <div className="card-body p-4 pt-2">
+                                    <WindguruLive spotId="4122" uid="wglive_4122_elafonisi" />
                                 </div>
                             </div>
+                        </div>
+
+                        <div className="listingSingleblock mb-4" id="windy">
+                            <div className="SingleblockHeader">
+                                <Link data-bs-toggle="collapse" data-bs-target="#windyPanel" aria-controls="windyPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Wind Map</h4></Link>
+                            </div>
+                            <div id="windyPanel" className="panel-collapse collapse show">
+                                <div className="card-body p-4 pt-2">
+                                    <WindyEmbed lat={35.272} lon={23.541} title="Elafonisi Wind Map" />
+                                </div>
                             </div>
                         </div>
 
