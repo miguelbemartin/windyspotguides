@@ -30,12 +30,12 @@ export default function IndexTen() {
 
      <NavbarLight/>
 
-    <div className="image-cover hero-header bg-primary position-relative" style={{backgroundImage:`url('/images/Fish-Bowl-Diaries-windsurfer-MarcilioBrowne-2400x1600-1.webp')`}} data-overlay="6">
+    <div className="image-cover hero-header bg-primary position-relative" style={{backgroundImage:`url('/images/zoe-jackson-g8InAXXvcJA-unsplash.jpg')`}} data-overlay="6">
         <div className="container position-relative z-1">
             <div className="row justify-content-center align-items-center mb-5 pt-lg-0 pt-5">
                 <div className="col-xl-10 col-lg-11 col-md-12 col-sm-12">
                     <div className="position-relative text-center">
-                        <h1>We Love Wind</h1>
+                        <h1>WE LOVE WIND</h1>
                         <p className="fs-5 fw-light">Find the best forecast to your next adventure</p>
                     </div>
                 </div>

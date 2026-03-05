@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="968px" height="240px" viewBox="0 0 968 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>WINDYSPOTS</title>
+<svg width="851px" height="240px" viewBox="0 0 851 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>WINDRALLY</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Oxygen-Bold, Oxygen" font-size="154" font-weight="bold">
-        <g id="Artboard" transform="translate(-17, -30)" fill="#FFFFFF">
-            <text id="WINDYSPOTS">
-                <tspan x="19.905" y="219">WINDY</tspan>
-                <tspan x="533.341" y="219" font-family="Oxygen-Italic, Oxygen" font-weight="normal">SPOTS</tspan>
+        <g id="Artboard" transform="translate(-81, -30)" fill="#FFFFFF">
+            <text id="WINDRALLY">
+                <tspan x="83.815" y="219">WIND</tspan>
+                <tspan x="503.927" y="219" font-family="Oxygen-Italic, Oxygen" font-weight="normal">RALLY</tspan>
             </text>
         </g>
     </g>

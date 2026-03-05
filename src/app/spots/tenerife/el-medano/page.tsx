@@ -1,15 +1,21 @@
 import React from 'react'
+import { Metadata } from 'next'
 import Link from 'next/link'
 
 import NavbarLight from '../../../components/navbar/navbar-light'
 import Descriptions from '../../../components/list-detail/descriptions'
 import WindguruWidget from '../../../components/windguru-widget'
+import WindguruLive from '../../../components/windguru-live'
 import YouTubeEmbed from '../../../components/youtube-embed'
 import WindyEmbed from '../../../components/windy-embed'
 import Footer from '../../../components/footer/footer'
 import BackToTop from '../../../components/back-to-top'
 
 import { FaLocationDot } from 'react-icons/fa6'
+
+export const metadata: Metadata = {
+  title: 'El Médano, Tenerife - Windsurf Spot Guide & Forecast',
+}
 
 export default function ElMedano() {
   return (
@@ -56,6 +62,17 @@ export default function ElMedano() {
                             <div className="card-body p-4 pt-2">
                                 <WindguruWidget spotId="1279560" uid="wg_fwdg_TODO_100_elmedano" />
                             </div>
+                            </div>
+                        </div>
+
+                        <div className="listingSingleblock mb-4" id="livestation">
+                            <div className="SingleblockHeader">
+                                <Link data-bs-toggle="collapse" data-bs-target="#livestationPanel" aria-controls="livestationPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Live Station</h4></Link>
+                            </div>
+                            <div id="livestationPanel" className="panel-collapse collapse show">
+                                <div className="card-body p-4 pt-2">
+                                    <WindguruLive spotId="14924" uid="wglive_14924_elmedano" />
+                                </div>
                             </div>
                         </div>
 

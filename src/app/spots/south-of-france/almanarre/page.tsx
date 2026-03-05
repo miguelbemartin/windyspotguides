@@ -1,4 +1,5 @@
 import React from 'react'
+import { Metadata } from 'next'
 import Link from 'next/link'
 
 import NavbarLight from '../../../components/navbar/navbar-light'
@@ -10,6 +11,10 @@ import Footer from '../../../components/footer/footer'
 import BackToTop from '../../../components/back-to-top'
 
 import { FaLocationDot } from 'react-icons/fa6'
+
+export const metadata: Metadata = {
+  title: 'Almanarre, Hyères - Windsurf Spot Guide & Forecast',
+}
 
 export default function Almanarre() {
   return (

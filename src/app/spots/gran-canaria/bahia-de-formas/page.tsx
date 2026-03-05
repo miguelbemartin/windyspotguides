@@ -1,4 +1,5 @@
 import React from 'react'
+import { Metadata } from 'next'
 import Link from 'next/link'
 
 import NavbarLight from '../../../components/navbar/navbar-light'
@@ -10,6 +11,10 @@ import Footer from '../../../components/footer/footer'
 import BackToTop from '../../../components/back-to-top'
 
 import { FaLocationDot } from 'react-icons/fa6'
+
+export const metadata: Metadata = {
+  title: 'Bahía de Formas, Gran Canaria - Windsurf Spot Guide & Forecast',
+}
 
 export default function BahiaDeFormas() {
   return (
@@ -54,7 +59,7 @@ export default function BahiaDeFormas() {
                             </div>
                             <div id="forecastPanel" className="panel-collapse collapse show">
                             <div className="card-body p-4 pt-2">
-                                <WindguruWidget spotId="TODO" uid="wg_fwdg_TODO_100_bahiadeformas" />
+                                <WindguruWidget spotId="49346" uid="wg_fwdg_TODO_100_bahiadeformas" />
                             </div>
                             </div>
                         </div>

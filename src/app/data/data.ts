@@ -1,97 +1,31 @@
 import { BsBackpack, BsBarChart, BsBasket2, BsCameraReels, BsCodeSlash, BsCoin, BsCreditCard2Back, BsCupHot, BsCupStraw, BsEnvelopeAt, BsFacebook, BsFileEarmarkTextFill, BsGraphUpArrow, BsHouseCheck, BsInstagram, BsLamp, BsLayers, BsLinkedin, BsLungs, BsPatchCheck, BsPatchQuestion, BsPeopleFill, BsPersonCheck, BsPinMap, BsPinMapFill, BsPinterest, BsShop, BsSuitHeart, BsTwitter, BsYelp } from "react-icons/bs";
 import { FaDumbbell, FaStar, FaStarHalfStroke } from "react-icons/fa6";
 
-export const categoryData = [
-    {
-        image:'/img/cats/catt-1.jpg',
-        icon:BsBackpack,
-        title:'Showroom',
-        list:'103 Lists'
-    },
-    {
-        image:'/img/cats/catt-2.jpg',
-        icon:BsBasket2,
-        title:'Fashion & Beauty',
-        list:'110 Lists'
-    },
-    {
-        image:'/img/cats/catt-3.jpg',
-        icon:BsHouseCheck,
-        title:'Real Estate',
-        list:'35 Lists'
-    },
-    {
-        image:'/img/cats/catt-4.jpg',
-        icon:FaDumbbell,
-        title:'Health & Fitness',
-        list:'120 Lists'
-    },
-    {
-        image:'/img/cats/catt-5.jpg',
-        icon:BsShop,
-        title:'Business Shop',
-        list:'69 Lists'
-    },
-    {
-        image:'/img/cats/catt-6.jpg',
-        icon:BsCupHot,
-        title:'Coffe Shop',
-        list:'78 Lists'
-    },
-    {
-        image:'/img/cats/catt-7.jpg',
-        icon:BsCupStraw,
-        title:'Restaurants',
-        list:'69 Lists'
-    },
-    {
-        image:'/img/cats/catt-8.jpg',
-        icon:BsLungs,
-        title:'Hospital & Med',
-        list:'75 Lists'
-    },
-    {
-        image:'/img/cats/catt-9.jpg',
-        icon:BsLamp,
-        title:'Wedding & Events',
-        list:'16 Lists'
-    },
-    {
-        image:'/img/cats/catt-10.jpg',
-        icon:BsCupHot,
-        title:'Coffe Shop',
-        list:'32 Lists'
-    },
-    {
-        image:'/img/cats/catt-9.jpg',
-        icon:BsLayers,
-        title:'Account Finance',
-        list:'16 Lists'
-    },
-    {
-        image:'/img/cats/catt-10.jpg',
-        icon:BsCodeSlash,
-        title:'Web Development',
-        list:'32 Lists'
-    },
-]
-
 export const listData = [
     {
         id:1,
         slug:'gran-canaria/pozo-izquierdo',
-        image:'/images/spots/pozo-izquierdo.png',
-        user:'/img/team-1.jpg',
-        status:'open',
+        image:'/images/IMG_2058.jpeg',
         featured:true,
         title:'Pozo Izquierdo',
         desc:'The iconic bump and jump spot in the Canary Islands.',
-        call:'+42 515 635 4758',
+        loction:'Gran Canaria, Spain',
+    },
+    {
+        id:12,
+        slug:'gran-canaria/bahia-de-formas',
+        image:'/images/spots/IMG_1185.jpeg',
+        user:'/img/team-1.jpg',
+        status:'open',
+        featured:false,
+        title:'Bahía de Formas',
+        desc:'Flat water speed paradise',
+        call:'',
         loction:'Gran Canaria, Spain',
         tag:'Fitness',
         tagIcon:FaDumbbell,
         tagIconStyle:'catIcon me-2 cats-1',
-        review:'46 Reviews',
+        review:'0 Reviews',
         rating:'good',
         ratingRate:'4.5',
         instantBooking:false
@@ -104,7 +38,7 @@ export const listData = [
         status:'open',
         featured:false,
         title:'El Médano',
-        desc:'Cicero famously orated against his political.',
+        desc:'Year-round trade wind mecca at the foot of Montaña Roja.',
         call:'+42 515 635 6150',
         loction:'Tenerife, Spain',
         tag:'Real Estate',
@@ -137,14 +71,14 @@ export const listData = [
     {
         id:4,
         slug:'south-of-france/gruissan',
-        image:'/img/list-4.jpg',
+        image:'/images/spots/pierre-cazenave-kaufman-yLU-JkF5yjk-unsplash.jpg',
         user:'/img/team-4.jpg',
         status:'open',
         featured:false,
         title:'Gruissan',
-        desc:'Cicero famously orated against his political.',
+        desc:'Shallow lagoon and open-sea spots powered by the Tramontane wind.',
         call:'+42 515 635 6358',
-        loction:'Sydney Australia',
+        loction:'Gruissan, France',
         tag:'Restaurant',
         tagIcon:BsCupStraw,
         tagIconStyle:'catIcon me-2 cats-4',
@@ -156,14 +90,14 @@ export const listData = [
     {
         id:5,
         slug:'south-of-france/almanarre',
-        image:'/img/list-5.jpg',
+        image:'/images/spots/almanarre.png',
         user:'/img/team-5.jpg',
         status:'close',
         featured:true,
         title:'Almanarre',
-        desc:'Cicero famously orated against his political.',
+        desc:'Long sandy beach with flat water and Mistral-driven side-shore wind.',
         call:'+42 515 635 0210',
-        loction:'Berlin Germany',
+        loction:'Hyères, France',
         tag:'Education',
         tagIcon:FaDumbbell,
         tagIconStyle:'catIcon me-2 cats-5',
@@ -180,9 +114,9 @@ export const listData = [
         status:'open',
         featured:false,
         title:'Garda Lake',
-        desc:'Cicero famously orated against his political.',
+        desc:'Alpine lake with reliable Ora and Peler thermal winds.',
         call:'+42 515 635 3251',
-        loction:'Moscow Russia',
+        loction:'Torbole, Italy',
         tag:'Showroom',
         tagIcon:BsBackpack,
         tagIconStyle:'catIcon me-2 cats-6',
@@ -190,6 +124,25 @@ export const listData = [
         rating:'excellent',
         ratingRate:'4.8',
         instantBooking:true
+    },
+    {
+        id:11,
+        slug:'fuerteventura/sotavento',
+        image:'/images/spots/sotavento.jpg',
+        user:'/img/team-1.jpg',
+        status:'open',
+        featured:true,
+        title:'Sotavento',
+        desc:'World-class freestyle and speed spot on Fuerteventura\'s south coast.',
+        call:'',
+        loction:'Fuerteventura, Spain',
+        tag:'Fitness',
+        tagIcon:FaDumbbell,
+        tagIconStyle:'catIcon me-2 cats-1',
+        review:'0 Reviews',
+        rating:'good',
+        ratingRate:'4.5',
+        instantBooking:false
     },
     {
         id:10,

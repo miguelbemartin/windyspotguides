@@ -1,7 +1,7 @@
 {
-  "name": "listinghub",
+  "name": "windyspot",
   "version": "1.0.0",
-  "description": "ListingHub - Next Ts Business Directory & Listing Template",
+  "description": "Windy Spot - Find the best forecast to windsurf",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
