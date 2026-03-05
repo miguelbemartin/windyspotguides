@@ -1,6 +1,15 @@
 import { BsBackpack, BsBarChart, BsBasket2, BsCameraReels, BsCodeSlash, BsCoin, BsCreditCard2Back, BsCupHot, BsCupStraw, BsEnvelopeAt, BsFacebook, BsFileEarmarkTextFill, BsGraphUpArrow, BsHouseCheck, BsInstagram, BsLamp, BsLayers, BsLinkedin, BsLungs, BsPatchCheck, BsPatchQuestion, BsPeopleFill, BsPersonCheck, BsPinMap, BsPinMapFill, BsPinterest, BsShop, BsSuitHeart, BsTwitter, BsYelp } from "react-icons/bs";
 import { FaDumbbell, FaStar, FaStarHalfStroke } from "react-icons/fa6";
 
+export const categoryData = [
+    {
+        image:'/img/cats/catt-1.jpg',
+        icon:BsBackpack,
+        title:'Showroom',
+        list:'103 Lists'
+    },
+]
+
 export const listData = [
     {
         id:1,
