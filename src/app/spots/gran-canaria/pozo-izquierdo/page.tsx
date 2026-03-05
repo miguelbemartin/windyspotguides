@@ -73,7 +73,7 @@ export default function PozoIzquierdo() {
                                         <YouTubeEmbed videoId="ElZh1azg7c4" title="Pozo Izquierdo Webcam" />
                                     </div>
                                     <div className="col-md-6">
-                                        <YouTubeEmbed videoId="eQbpxwKb-BY" title="Pozo Izquierdo Webcam 2" />
+                                        <YouTubeEmbed videoId="f1eZuztlKKY" title="Pozo Izquierdo Webcam 2" />
                                     </div>
                                 </div>
                             </div>
