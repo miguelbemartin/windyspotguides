@@ -2,10 +2,10 @@ import React from 'react'
 
 import { BsCheckCircleFill, BsPatchCheckFill } from 'react-icons/bs'
 
-import NavbarDark from '../components/navbar/navbar-dark'
-import FooterTop from '../components/footer-top'
-import Footer from '../components/footer/footer'
-import BackToTop from '../components/back-to-top'
+import NavbarDark from '../../components/navbar/navbar-dark'
+import FooterTop from '../../components/footer-top'
+import Footer from '../../components/footer/footer'
+import BackToTop from '../../components/back-to-top'
 
 export default function SuccessPayment() {
   return (

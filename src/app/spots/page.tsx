@@ -46,12 +46,11 @@ useEffect(() => {
   return (
     <>
         <NavLightTwo/>
-1
+
         <div className="bg-white py-3 sticky-lg-top z-3">
-            <FilterOne list={false}/>
+            <FilterOne list={false} showToggle={false}/>
         </div>
 
-2
         <section className="bg-light">
             <div className="container">
                 <div className="row align-items-center justify-content-between mb-4">

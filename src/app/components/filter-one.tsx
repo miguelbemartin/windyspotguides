@@ -5,7 +5,7 @@ import { BsFunnel, BsList, BsStarFill, BsUiRadiosGrid } from 'react-icons/bs'
 import RangeSlider from "./range-slider";
 
 
-export default function FilterOne({list}:{list:boolean}) {
+export default function FilterOne({list, showToggle = true}:{list:boolean, showToggle?: boolean}) {
   
   return (
     <>
@@ -235,7 +235,7 @@ export default function FilterOne({list}:{list:boolean}) {
                     
                 </div>
                 
-                <div className="col">
+                {showToggle && <div className="col">
                     <ul className="nav nav-pills nav-fill gap-2 small d-inline-flex lightprimary border border-2 rounded-pill p-1 float-end">
                         <li className="nav-item" role="presentation">
                             <Link href="/list-layout-02" className={`nav-link rounded-pill d-flex align-items-center ${list ? 'active' : ''}`} id="buy1"><BsList className="me-2"/>List</Link>
@@ -244,7 +244,7 @@ export default function FilterOne({list}:{list:boolean}) {
                             <Link href="/grid-layout-02" className={`nav-link rounded-pill d-flex align-items-center ${!list ? 'active' : ''}`} id="rent1"><BsUiRadiosGrid className="me-2"/>Grid</Link>
                         </li>
                     </ul>
-                </div>
+                </div>}
             </div>
         </div>
 
