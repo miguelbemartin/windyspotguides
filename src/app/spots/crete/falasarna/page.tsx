@@ -5,7 +5,6 @@ import Link from 'next/link'
 import NavbarLight from '../../../components/navbar/navbar-light'
 import WindguruWidget from '../../../components/windguru-widget'
 import WindyEmbed from '../../../components/windy-embed'
-import YouTubeEmbed from '../../../components/youtube-embed'
 import Footer from '../../../components/footer/footer'
 import BackToTop from '../../../components/back-to-top'
 
@@ -58,25 +57,11 @@ export default function Falasarna() {
                             </div>
                             <div id="forecastPanel" className="panel-collapse collapse show">
                                 <div className="card-body p-4 pt-2">
-                                    <WindguruWidget spotId="TODO" uid="wg_fwdg_TODO_falasarna" />
+                                    <WindguruWidget spotId="49269" uid="wg_fwdg_49269_100_falasarna" />
                                 </div>
                             </div>
                         </div>
 
-                        <div className="listingSingleblock mb-4" id="webcams">
-                            <div className="SingleblockHeader">
-                                <Link data-bs-toggle="collapse" data-bs-target="#webcamsPanel" aria-controls="webcamsPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Live Webcams</h4></Link>
-                            </div>
-                            <div id="webcamsPanel" className="panel-collapse collapse show">
-                                <div className="card-body p-4 pt-2">
-                                    <div className="row g-4">
-                                        <div className="col-md-6">
-                                            <YouTubeEmbed videoId="TODO" title="Falasarna Webcam" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <div className="listingSingleblock mb-4" id="descriptions">
                             <div className="SingleblockHeader">

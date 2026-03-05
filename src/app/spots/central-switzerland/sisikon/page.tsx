@@ -19,7 +19,7 @@ export default function Sisikon() {
     <>
         <NavbarLight/>
 
-        <section className="bg-cover position-relative ht-200 py-0" style={{backgroundImage:`url('/images/spots/sisikon.jpg')`}} data-overlay="4">
+        <section className="bg-cover position-relative ht-200 py-0" style={{backgroundImage:`url('/images/spots/isleten.jpg')`}} data-overlay="4">
             <div className="container h-100">
                 <div className="row align-items-start">
                     <div className="col-xl-12 col-lg-12 col-md-12 col-12">
@@ -57,7 +57,7 @@ export default function Sisikon() {
                             </div>
                             <div id="forecastPanel" className="panel-collapse collapse show">
                             <div className="card-body p-4 pt-2">
-                                <WindguruWidget spotId="TODO" uid="wg_fwdg_TODO_100_sisikon" />
+                                <WindguruWidget spotId="57010" uid="wg_fwdg_57010_100_sisikon" />
                             </div>
                             </div>
                         </div>

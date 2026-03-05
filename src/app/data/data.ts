@@ -183,25 +183,6 @@ export const listData = [
         instantBooking:false
     },
     {
-        id:16,
-        slug:'gran-canaria/vargas',
-        image:'/images/spots/TODO.jpg',
-        user:'/img/team-1.jpg',
-        status:'open',
-        featured:false,
-        title:'Vargas',
-        desc:'Wave spot on Gran Canaria\'s east coast near Pozo Izquierdo.',
-        call:'',
-        loction:'Gran Canaria, Spain',
-        tag:'Fitness',
-        tagIcon:FaDumbbell,
-        tagIconStyle:'catIcon me-2 cats-1',
-        review:'0 Reviews',
-        rating:'good',
-        ratingRate:'4.3',
-        instantBooking:false
-    },
-    {
         id:17,
         slug:'central-switzerland/isleten',
         image:'/images/spots/isleten.jpg',
@@ -242,7 +223,7 @@ export const listData = [
     {
         id:19,
         slug:'central-switzerland/sisikon',
-        image:'/images/spots/sisikon.jpg',
+        image:'/images/spots/isleten.jpg',
         user:'/img/team-1.jpg',
         status:'open',
         featured:false,
@@ -432,7 +413,7 @@ export const cityData = [
         gridClass:'col-xl-6 col-lg-6 col-md-4 col-sm-6',
         listing:'16 Listing',
         name:'Gran Canaria',
-        tag:['Pozo Izquierdo','Vargas','Bahía de Formas','Ojos de Garza']
+        tag:['Pozo Izquierdo','Bahía de Formas','Ojos de Garza']
     },
     {
         image:'/img/city/location-2.jpg',

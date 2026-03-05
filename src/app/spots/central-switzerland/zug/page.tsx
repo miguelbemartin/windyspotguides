@@ -5,7 +5,6 @@ import Link from 'next/link'
 import NavbarLight from '../../../components/navbar/navbar-light'
 
 import WindguruWidget from '../../../components/windguru-widget'
-import YouTubeEmbed from '../../../components/youtube-embed'
 import WindyEmbed from '../../../components/windy-embed'
 import Footer from '../../../components/footer/footer'
 import BackToTop from '../../../components/back-to-top'
@@ -59,7 +58,7 @@ export default function Zug() {
                             </div>
                             <div id="forecastPanel" className="panel-collapse collapse show">
                             <div className="card-body p-4 pt-2">
-                                <WindguruWidget spotId="TODO" uid="wg_fwdg_TODO_100_zug" />
+                                <WindguruWidget spotId="57008" uid="wg_fwdg_57008_100_zug" />
                             </div>
                             </div>
                         </div>
@@ -69,16 +68,20 @@ export default function Zug() {
                                 <Link data-bs-toggle="collapse" data-bs-target="#webcamsPanel" aria-controls="webcamsPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Live Webcams</h4></Link>
                             </div>
                             <div id="webcamsPanel" className="panel-collapse collapse show">
-                            <div className="card-body p-4 pt-2">
-                                <div className="row g-4">
-                                    <div className="col-md-6">
-                                        <YouTubeEmbed videoId="TODO" title="Zug Webcam" />
-                                    </div>
-                                    <div className="col-md-6">
-                                        <YouTubeEmbed videoId="TODO" title="Zug Webcam 2" />
+                                <div className="card-body p-4 pt-2">
+                                    <div className="row g-4">
+                                        <div className="col-md-6">
+                                            <div className="ratio ratio-16x9">
+                                                <img src="https://www.barile.ch/yczug/yczug/cam1.jpg" alt="Zug Webcam" className="object-fit-cover" />
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <div className="ratio ratio-16x9">
+                                                <img src="http://www.webcam.scc.ch/image.jpg" alt="Zug Webcam 2" className="object-fit-cover" />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
 

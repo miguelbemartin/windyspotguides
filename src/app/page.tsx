@@ -64,7 +64,7 @@ export default function IndexTen() {
 
             <div className="row align-items-center justify-content-center mt-5">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-12">
-                    <div className="text-center"><Link href="/spots" className="btn btn-light-primary fw-medium rounded-pill px-md-5">Explore More listings</Link></div>
+                    <div className="text-center"><Link href="/spots" className="btn btn-light-primary fw-medium rounded-pill px-md-5">explore more spots</Link></div>
                 </div>
             </div>
         </div>
@@ -75,8 +75,8 @@ export default function IndexTen() {
             <div className="row align-items-center justify-content-center">
                 <div className="col-xl-7 col-lg-8 col-md-11 col-sm-12">
                     <div className="secHeading-wrap text-center">
-                        <h3 className="sectionHeading">Explore Listings By <span className="text-primary">Cities</span></h3>
-                        {/* <p>Our cliens love our services and give great & positive reviews</p> */}
+                        <h3 className="sectionHeading">Explore Spots By <span className="text-primary">Cities</span></h3>
+                        <p>Browse windsurf spots by region and find your next session</p>
                     </div>
                 </div>
             </div>
@@ -84,43 +84,10 @@ export default function IndexTen() {
         </div>
     </section>
 
-    {/* <section>
-        <AboutOne/>
-    </section> */}
-
-    {/* <section className="bg-light">
-        <div className="container">
-            <div className="row align-items-center justify-content-center">
-                <div className="col-xl-7 col-lg-8 col-md-11 col-sm-12">
-                    <div className="secHeading-wrap text-center">
-                        <h3 className="sectionHeading">Our Great <span className="text-primary">Reviews</span></h3>
-                        <p>Our cliens love our services and give great & positive reviews</p>
-                    </div>
-                </div>
-            </div>
-            <ClientOne/>
-        </div>
-    </section> */}
-
-    {/* <section>
-        <div className="container">
-            <div className="row align-items-center justify-content-center">
-                <div className="col-xl-7 col-lg-8 col-md-11 col-sm-12">
-                    <div className="secHeading-wrap text-center">
-                        <h3 className="sectionHeading">Latest Updates <span className="text-primary">News</span></h3>
-                        <p>Join ListingHub and get latest & trending updates about listing</p>
-                    </div>
-                </div>
-            </div>
-            <BlogOne/>
-        </div>
-    </section> */}
-
-    {/* <FooterTop/> */}
-
     <Footer/>
 
     <BackToTop/>
+
     </>
   )
 }

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import NavbarLight from '../../../components/navbar/navbar-light'
 import WindguruWidget from '../../../components/windguru-widget'
-import YouTubeEmbed from '../../../components/youtube-embed'
+import WindguruLive from '../../../components/windguru-live'
 import WindyEmbed from '../../../components/windy-embed'
 import Footer from '../../../components/footer/footer'
 import BackToTop from '../../../components/back-to-top'
@@ -58,25 +58,22 @@ export default function Tarifa() {
                             </div>
                             <div id="forecastPanel" className="panel-collapse collapse show">
                             <div className="card-body p-4 pt-2">
-                                <WindguruWidget spotId="17" uid="wg_fwdg_17_100_1772298934613" />
+                                <WindguruWidget spotId="43" uid="wg_fwdg_43_100_tarifa" />
                             </div>
                             </div>
                         </div>
 
-                        <div className="listingSingleblock mb-4" id="webcams">
+                        <div className="listingSingleblock mb-4" id="livestation">
                             <div className="SingleblockHeader">
-                                <Link data-bs-toggle="collapse" data-bs-target="#webcamsPanel" aria-controls="webcamsPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Live Webcams</h4></Link>
+                                <Link data-bs-toggle="collapse" data-bs-target="#livestationPanel" aria-controls="livestationPanel" href="#" aria-expanded="false" className="collapsed"><h4 className="listingcollapseTitle">Live Station</h4></Link>
                             </div>
-                            <div id="webcamsPanel" className="panel-collapse collapse show">
-                            <div className="card-body p-4 pt-2">
-                                <div className="row g-4">
-                                    <div className="col-md-6">
-                                        <YouTubeEmbed videoId="cj1j_kdOazY" title="Tarifa Webcam" />
-                                    </div>
+                            <div id="livestationPanel" className="panel-collapse collapse show">
+                                <div className="card-body p-4 pt-2">
+                                    <WindguruLive spotId="2667" uid="wglive_2667_tarifa" />
                                 </div>
                             </div>
-                            </div>
                         </div>
+
 
                         <div className="listingSingleblock mb-4" id="windy">
                             <div className="SingleblockHeader">
