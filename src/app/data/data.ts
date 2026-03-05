@@ -27,6 +27,7 @@ export const listData = [
         review:'0 Reviews',
         rating:'good',
         ratingRate:'4.5',
+        user:'/img/team-1.jpg',
         instantBooking:false
     },
     {
