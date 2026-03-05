@@ -5,7 +5,6 @@ import Image from 'next/image'
 
 import NavLightTwo from '../components/navbar/nav-light-two'
 import FilterOne from '../components/filter-one'
-import FooterTop from '../components/footer-top'
 import Footer from '../components/footer/footer'
 import BackToTop from '../components/back-to-top'
 
@@ -94,7 +93,6 @@ export default function SpotsList({ page }: { page: number }) {
                 </div>
             </section>
 
-            <FooterTop/>
             <Footer/>
             <BackToTop/>
         </>

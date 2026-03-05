@@ -7,6 +7,8 @@ import { FiX } from 'react-icons/fi';
 import { BiSolidShoppingBagAlt } from 'react-icons/bi'
 import { usePathname } from 'next/navigation';
 
+import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
+
 
 export default function NavLightTwo() {
     const [scroll,setScroll] = useState(false);
@@ -14,7 +16,7 @@ export default function NavLightTwo() {
     const [windowWidth, setWindowWidth] = useState(0);
     const [toggle, setIsToggle] = useState(false);
 
-    const location = usePathname(); 
+    const location = usePathname();
 
     useEffect(()=>{
         if (typeof window === "undefined") return;
@@ -70,7 +72,7 @@ export default function NavLightTwo() {
                             <img src='/img/logo.svg' className='img-fluid lightLogo' alt='Logo'/>
                         </div>
                         <span className='nav-menus-wrapper-close-button'  onClick={()=>setIsToggle(!toggle)}>✕</span>
-                        <ul className="nav-menu">
+                        {/* <ul className="nav-menu">
                             <li className={`${['/','/home-2','/home-3','/home-4','/home-5','/home-6','/home-7','/home-8','/home-9','/home-10','/home-splash','/home-map'].includes(current)? 'active' : ''}`}><Link href="#">Home<span className="submenu-indicator"><span className="submenu-indicator-chevron"></span></span></Link>
                                 <ul className="nav-dropdown nav-submenu">
                                     <li className={`${current === '/' ? 'active' : ''}`}><Link href="/">Home Layout 01</Link></li>
@@ -92,21 +94,21 @@ export default function NavLightTwo() {
                                 <ul className="nav-dropdown nav-submenu">
                                     <li className={`${['/grid-layout-01','/grid-layout-02','/grid-layout-03','/grid-layout-04','/grid-layout-05','/grid-layout-06'].includes(current)? 'active' : ''}`}><Link href="#">Grid Layouts<span className="submenu-indicator"><span className="submenu-indicator-chevron"></span></span></Link>
                                         <ul className="nav-dropdown nav-submenu">
-                                            <li className={`${current === '/grid-layout-01' ? 'active' : ''}`}><Link href="/grid-layout-01">Grid Layout 01</Link></li>                                    
-                                            <li className={`${current === '/grid-layout-02' ? 'active' : ''}`}><Link href="/grid-layout-02">Grid Layout 02</Link></li>                                    
-                                            <li className={`${current === '/grid-layout-03' ? 'active' : ''}`}><Link href="/grid-layout-03">Grid Layout 03</Link></li>                                    
-                                            <li className={`${current === '/grid-layout-04' ? 'active' : ''}`}><Link href="/grid-layout-04">Grid Layout 04</Link></li>                                    
-                                            <li className={`${current === '/grid-layout-05' ? 'active' : ''}`}><Link href="/grid-layout-05">Grid Layout 05</Link></li>                                    
-                                            <li className={`${current === '/grid-layout-06' ? 'active' : ''}`}><Link href="/grid-layout-06">Grid Layout 06</Link></li>                                    
+                                            <li className={`${current === '/grid-layout-01' ? 'active' : ''}`}><Link href="/grid-layout-01">Grid Layout 01</Link></li>
+                                            <li className={`${current === '/grid-layout-02' ? 'active' : ''}`}><Link href="/grid-layout-02">Grid Layout 02</Link></li>
+                                            <li className={`${current === '/grid-layout-03' ? 'active' : ''}`}><Link href="/grid-layout-03">Grid Layout 03</Link></li>
+                                            <li className={`${current === '/grid-layout-04' ? 'active' : ''}`}><Link href="/grid-layout-04">Grid Layout 04</Link></li>
+                                            <li className={`${current === '/grid-layout-05' ? 'active' : ''}`}><Link href="/grid-layout-05">Grid Layout 05</Link></li>
+                                            <li className={`${current === '/grid-layout-06' ? 'active' : ''}`}><Link href="/grid-layout-06">Grid Layout 06</Link></li>
                                         </ul>
                                     </li>
                                     <li className={`${['/list-layout-01','/list-layout-02','/list-layout-03','/list-layout-04','/list-layout-05'].includes(current)? 'active' : ''}`}><Link href="#">List Layouts<span className="submenu-indicator"><span className="submenu-indicator-chevron"></span></span></Link>
                                         <ul className="nav-dropdown nav-submenu">
-                                            <li className={`${current === '/list-layout-01' ? 'active' : ''}`}><Link href="/list-layout-01">List Layout 01</Link></li>                                     
-                                            <li className={`${current === '/list-layout-02' ? 'active' : ''}`}><Link href="/list-layout-02">List Layout 02</Link></li>                                     
-                                            <li className={`${current === '/list-layout-03' ? 'active' : ''}`}><Link href="/list-layout-03">List Layout 03</Link></li>                                     
-                                            <li className={`${current === '/list-layout-04' ? 'active' : ''}`}><Link href="/list-layout-04">List Layout 04</Link></li>                                     
-                                            <li className={`${current === '/list-layout-05' ? 'active' : ''}`}><Link href="/list-layout-05">List Layout 05</Link></li>                                     
+                                            <li className={`${current === '/list-layout-01' ? 'active' : ''}`}><Link href="/list-layout-01">List Layout 01</Link></li>
+                                            <li className={`${current === '/list-layout-02' ? 'active' : ''}`}><Link href="/list-layout-02">List Layout 02</Link></li>
+                                            <li className={`${current === '/list-layout-03' ? 'active' : ''}`}><Link href="/list-layout-03">List Layout 03</Link></li>
+                                            <li className={`${current === '/list-layout-04' ? 'active' : ''}`}><Link href="/list-layout-04">List Layout 04</Link></li>
+                                            <li className={`${current === '/list-layout-05' ? 'active' : ''}`}><Link href="/list-layout-05">List Layout 05</Link></li>
                                         </ul>
                                     </li>
                                     <li className={`${['/half-map-01','/half-map-02','/half-map-03','/half-map-04','/half-map-05'].includes(current)? 'active' : ''}`}><Link href="#">Half Map Screen<span className="submenu-indicator"><span className="submenu-indicator-chevron"></span></span></Link>
@@ -164,11 +166,11 @@ export default function NavLightTwo() {
                                     </li>
                                     <li className={`${current === '/author-profile' ? 'active' : ''}`}><Link href="/author-profile" className='d-flex'><BsPersonVcard className="me-1 align-self-center"/>Author Profile</Link></li>
                                     <li className={`${current === '/booking-page' ? 'active' : ''}`}><Link href="/booking-page" className='d-flex'><BsCalendar2Check className="me-1 align-self-center"/>Booking Page</Link></li>
-                                    <li className={`${current === '/about-us' ? 'active' : ''}`}><Link href="/about-us" className='d-flex'><BsPersonCheck className="me-1 align-self-center"/>About Us</Link></li>                                
+                                    <li className={`${current === '/about-us' ? 'active' : ''}`}><Link href="/about-us" className='d-flex'><BsPersonCheck className="me-1 align-self-center"/>About Us</Link></li>
                                     <li className={`${current === '/blog' ? 'active' : ''}`}><Link href="/blog" className='d-flex'><BsBlockquoteLeft className="me-1 align-self-center"/>Blog Page</Link></li>
                                     <li className={`${current === '/contact-us' ? 'active' : ''}`}><Link href="/contact-us" className='d-flex'><BsEnvelopeCheck className="me-1 align-self-center"/>Contact Us</Link></li>
-                                    <li className={`${current === '/pricing' ? 'active' : ''}`}><Link href="/pricing" className='d-flex'><BsCoin className="bi bi-coin me-1 align-self-center"/>Pricing</Link></li>										
-                                    <li className={`${current === '/privacy-policy' ? 'active' : ''}`}><Link href="/privacy-policy" className='d-flex'><BsCoin className="bi bi-coin me-1 align-self-center"/>Privacy Policy</Link></li>										
+                                    <li className={`${current === '/pricing' ? 'active' : ''}`}><Link href="/pricing" className='d-flex'><BsCoin className="bi bi-coin me-1 align-self-center"/>Pricing</Link></li>
+                                    <li className={`${current === '/privacy-policy' ? 'active' : ''}`}><Link href="/privacy-policy" className='d-flex'><BsCoin className="bi bi-coin me-1 align-self-center"/>Privacy Policy</Link></li>
                                     <li className={`${current === '/help-center' ? 'active' : ''}`}><Link href="/help-center" className='d-flex'><BsPatchQuestion className="me-1 align-self-center"/>Help Center</Link></li>
                                     <li className={`${current === '/comingsoon' ? 'active' : ''}`}><Link href="/comingsoon" className='d-flex'><BsHourglassTop className="me-1 align-self-center"/>Coming Soon</Link></li>
                                     <li className={`${current === '/faq' ? 'active' : ''}`}><Link href="/faq" className='d-flex'><BsInfoCircle className="me-1 align-self-center"/>FAQ's</Link></li>
@@ -176,20 +178,24 @@ export default function NavLightTwo() {
                                     <li className={`${current === '/elements' ? 'active' : ''}`}><Link href="/elements" className='d-flex'><BsGear className="me-1 align-self-center"/>Elements</Link></li>
                                 </ul>
                             </li>
-                            
+
                             <li><Link href="#" className="mob-addlisting light" ><BsGeoAltFill className="me-1"/>Add Listing</Link></li>
-                        </ul>
+                        </ul> */}
 
                         <ul className="nav-menu nav-menu-social align-to-right">
-                            <li>
-                                <Link href="#login" className="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#login"><BsPersonCircle className="fs-6 me-1"/><span className="navCl">SignUp or SignIn</span></Link>
-                            </li>
-                            <li>
-                                <Link href="#cartSlider" className="cart-content" data-bs-toggle="offcanvas" role="button" aria-controls="cartSlider"><BsBasket2  className=""/><span className="head-cart-counter">3</span></Link>
-                            </li>
-                            <li className="list-buttons light">
-                                <Link href="/register"><BsGeoAlt className="fs-6 me-1"/>Add Listing</Link>
-                            </li>
+                            <SignedOut>
+                                <li>
+                                    <Link href="/login" className="d-flex align-items-center"><BsPersonCircle className="fs-6 me-1"/><span className="navCl">Login</span></Link>
+                                </li>
+                                <li className="list-buttons light">
+                                    <Link href="/register"><BsPersonPlus className="fs-6 me-1"/>Sign Up</Link>
+                                </li>
+                            </SignedOut>
+                            <SignedIn>
+                                <li className="d-flex align-items-center px-3 pt-2">
+                                    <UserButton afterSignOutUrl="/" />
+                                </li>
+                            </SignedIn>
                         </ul>
                     </div>
                 </nav>
@@ -203,7 +209,7 @@ export default function NavLightTwo() {
                     <div className="modal-header justify-content-end border-0 pb-0">
                         <Link href="#" className="square--30 circle bg-light-danger text-danger" data-bs-dismiss="modal" aria-label="Close"><FiX className=""/></Link>
                     </div>
-                    
+
                     <div className="modal-body px-4">
                         <div className="text-center mb-5">
                             <h2>Welcome Back</h2>
@@ -215,7 +221,7 @@ export default function NavLightTwo() {
                                 <div className="col-xl-6 col-lg-6 col-md-6"><Link href="#" className="btn btn-outline-secondary border rounded-3 text-md px-lg-2 full-width"><img src='/img/google.png' className="img-fluid me-2" width="16" alt=""/>Login with Google</Link></div>
                                 <div className="col-xl-6 col-lg-6 col-md-6"><Link href="#" className="btn btn-outline-secondary border rounded-3 text-md px-lg-2 full-width"><img src='/img/facebook.png' className="img-fluid me-2" width="16" alt=""/>Login with Facebook</Link></div>
                             </div>
-                            
+
                             <div className="form-group form-border mb-4">
                                 <label className="form-label" htmlFor="email01">Your email</label>
                                 <input type="email" className="form-control" id="email01" placeholder="email@site.com" required/>
@@ -244,7 +250,7 @@ export default function NavLightTwo() {
                             </div>
                         </form>
                     </div>
-                    
+
                     <div className="modal-footer p-3 border-top">
                         <div className="d-flex align-items-center justify-content-between gap-3">
                             <div className="brand px-lg-4 px-3"><img src='/img/brand/logo-1.png' className="img-fluid" alt=""/></div>
@@ -264,7 +270,7 @@ export default function NavLightTwo() {
             <div className="offcanvas-body">
                 <div className="cartItems w-100">
                     <div className="d-flex align-items-center justify-content-start flex-column gap-3">
-                        
+
                         <div className="singleCartitem d-flex align-items-center justify-content-between gap-4 w-100">
                             <div className="d-flex align-items-center justify-content-start gap-3">
                                 <div className="cartiteThumb"><figure className="d-block m-0"><img src='/img/list-3.jpg' className="img-fluid rounded-2" width="60" alt=""/></figure></div>
@@ -273,10 +279,10 @@ export default function NavLightTwo() {
                                     <p className="m-0">1x$25.50</p>
                                 </div>
                             </div>
-                            
+
                             <div className="removeItemcart"><Link href="#" className="square--35 circle badge-secondary"><FiX className=""/></Link></div>
                         </div>
-                        
+
                         <div className="singleCartitem d-flex align-items-center justify-content-between gap-3 w-100">
                             <div className="d-flex align-items-center justify-content-start gap-3">
                                 <div className="cartiteThumb"><figure className="d-block m-0"><img src='/img/list-4.jpg' className="img-fluid rounded-2" width="60" alt=""/></figure></div>
@@ -285,10 +291,10 @@ export default function NavLightTwo() {
                                     <p className="m-0">1x$22.10</p>
                                 </div>
                             </div>
-                            
+
                             <div className="removeItemcart"><Link href="#" className="square--35 circle badge-secondary"><FiX className=""/></Link></div>
                         </div>
-                        
+
                         <div className="singleCartitem d-flex align-items-center justify-content-between gap-3 w-100">
                             <div className="d-flex align-items-center justify-content-start gap-3">
                                 <div className="cartiteThumb"><figure className="d-block m-0"><img src='/img/list-5.jpg' className="img-fluid rounded-2" width="60" alt=""/></figure></div>
@@ -297,18 +303,18 @@ export default function NavLightTwo() {
                                     <p className="m-0">1x$17.40</p>
                                 </div>
                             </div>
-                            
+
                             <div className="removeItemcart"><Link href="" className="square--35 circle badge-secondary"><FiX className=""/></Link></div>
                         </div>
-                    
+
                     </div>
-                    
+
                     <div className="cartSubtotal w-100 py-3 border-top mt-3">
                         <h6 className="m-0">Subtotal: $128.75</h6>
                     </div>
-                    
+
                 </div>
-                
+
                 <div className="cartButtons w-100 py-2">
                     <div className="d-flex align-items-center justify-content-center flex-wrap gap-2">
                         <a href="/viewcart" className="btn btn-md btn-light-primary fw-medium flex-fill">View Cart</a>
@@ -327,11 +333,11 @@ export default function NavLightTwo() {
                     </div>
                 </div>
                 <div className="popularSearches d-flex align-items-center justify-content-center gap-2 flex-wrap">
-                    <div className="singleItem"><Link href="#" className="badge badge-xs badge-primary rounded-pill">Real Estate</Link></div>	
-                    <div className="singleItem"><Link href="#" className="badge badge-xs badge-primary rounded-pill">Eat & Drink</Link></div>	
-                    <div className="singleItem"><Link href="#" className="badge badge-xs badge-primary rounded-pill">Shopping</Link></div>	
-                    <div className="singleItem"><Link href="#" className="badge badge-xs badge-primary rounded-pill">Nightlife</Link></div>	
-                    <div className="singleItem"><Link href="#" className="badge badge-xs badge-primary rounded-pill">Services</Link></div>	
+                    <div className="singleItem"><Link href="#" className="badge badge-xs badge-primary rounded-pill">Real Estate</Link></div>
+                    <div className="singleItem"><Link href="#" className="badge badge-xs badge-primary rounded-pill">Eat & Drink</Link></div>
+                    <div className="singleItem"><Link href="#" className="badge badge-xs badge-primary rounded-pill">Shopping</Link></div>
+                    <div className="singleItem"><Link href="#" className="badge badge-xs badge-primary rounded-pill">Nightlife</Link></div>
+                    <div className="singleItem"><Link href="#" className="badge badge-xs badge-primary rounded-pill">Services</Link></div>
                 </div>
             </div>
         </div>

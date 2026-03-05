@@ -70,12 +70,12 @@ export const listData = [
     },
     {
         id:3,
-        slug:'central-switzerland/fluelen-gruonbach',
+        slug:'central-switzerland/fluelen',
         image:'/images/spots/isleten.jpg',
         user:'/img/team-3.jpg',
         status:'open',
         featured:true,
-        title:'Flüelen Gruonbach',
+        title:'Flüelen',
         desc:'Foehn wind spot on the shores of Lake Uri.',
         call:'',
         loction:'Flüelen, Uri, Switzerland',
@@ -411,44 +411,66 @@ export const cityData = [
     {
         image:'/images/joel-rohland-ON5qDh2m-Ro-unsplash.jpg',
         gridClass:'col-xl-6 col-lg-6 col-md-4 col-sm-6',
-        listing:'16 Listing',
+        listing:'2 Spots',
         name:'Gran Canaria',
-        tag:['Pozo Izquierdo','Bahía de Formas','Ojos de Garza']
+        featured:true,
+        tag:['Pozo Izquierdo','Bahía de Formas']
     },
     {
-        image:'/img/city/location-2.jpg',
+        image:'/images/cities/lina-bob-anCPcwhCQ28-unsplash.jpg',
         gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
-        listing:'24 Listing',
+        listing:'1 Spot',
         name:'Tenerife',
-        tag:['El Médano','New York','Dallas','Denver']
+        featured:true,
+        tag:['El Médano']
     },
     {
-        image:'/img/city/location-3.jpg',
+        image:'/images/spots/michele-marchesi-o3ys6oKoHtA-unsplash.jpg',
         gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
-        listing:'30 Listing',
-        name:'New Orleans',
-        tag:['San Diego','New York','Dallas','Denver']
+        listing:'1 Spot',
+        name:'Fuerteventura',
+        featured:true,
+        tag:['Sotavento']
     },
     {
-        image:'/img/city/location-4.jpg',
+        image:'/images/spots/david-vives-zD6sFNw__u4-unsplash.jpg',
         gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
-        listing:'10 Listing',
-        name:'San Antonio',
-        tag:['San Diego','New York','Dallas','Denver']
+        listing:'1 Spot',
+        name:'Cadiz',
+        featured:false,
+        tag:['Tarifa']
     },
     {
-        image:'/img/city/location-5.jpg',
+        image:'/images/spots/almanarre.png',
         gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
-        listing:'22 Listing',
-        name:'Los Angeles',
-        tag:['San Diego','New York','Dallas','Denver']
+        listing:'2 Spots',
+        name:'South of France',
+        featured:true,
+        tag:['Gruissan','Almanarre']
+    },
+    {
+        image:'/images/spots/klaus-huber-QfMCwSfmiuc-unsplash.jpg',
+        gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
+        listing:'1 Spot',
+        name:'Garda Lake',
+        featured:false,
+        tag:['Torbole']
+    },
+    {
+        image:'/images/spots/dimitris-kiriakakis-yGA8EEV2xtU-unsplash.jpg',
+        gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
+        listing:'2 Spots',
+        name:'Crete',
+        featured:true,
+        tag:['Falasarna','Elafonisi']
     },
     {
         image:'/images/switzerland.png',
         gridClass:'col-xl-6 col-lg-6 col-md-4 col-sm-6',
-        listing:'12 Listing',
+        listing:'5 Spots',
         name:'Switzerland',
-        tag:['Isleten','Flüelen','Sisikon']
+        featured:true,
+        tag:['Flüelen','Isleten','Zug','Sisikon','Sempach']
     },
 ]
 
