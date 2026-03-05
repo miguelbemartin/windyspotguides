@@ -19,6 +19,15 @@ export const listData = [
         title:'Pozo Izquierdo',
         desc:'The iconic bump and jump spot in the Canary Islands.',
         loction:'Gran Canaria, Spain',
+        status:'open',
+        call:'',
+        tag:'Fitness',
+        tagIcon:FaDumbbell,
+        tagIconStyle:'catIcon me-2 cats-1',
+        review:'0 Reviews',
+        rating:'good',
+        ratingRate:'4.5',
+        instantBooking:false
     },
     {
         id:12,
