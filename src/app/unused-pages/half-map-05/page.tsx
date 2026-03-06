@@ -6,7 +6,7 @@ import NavbarFull from '../../components/navbar/navbar-full'
 import Map from '../../components/map'
 import FilterTwo from '../../components/footer/filter-two'
 
-import { listData } from '../../data/data'
+import { listData } from '../../data/data-example'
 
 import { FaArrowLeft, FaArrowRight, FaHeart, FaLocationDot, FaStar } from 'react-icons/fa6'
 import { BsCoin, BsLightningChargeFill, BsPatchCheckFill, BsTelephone } from 'react-icons/bs'

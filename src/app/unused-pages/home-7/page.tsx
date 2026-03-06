@@ -15,7 +15,7 @@ import BackToTop from '../../components/back-to-top'
 import { BsArrowRight, BsMouse, BsPatchCheckFill, BsSearch } from 'react-icons/bs'
 import { IconType } from 'react-icons'
 
-import { reviewData2 } from '../../data/data'
+import { reviewData2 } from '../../data/data-example'
 
 interface ReviewData{
     image: string;

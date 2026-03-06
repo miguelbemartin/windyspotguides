@@ -1,5 +1,5 @@
-import { BsBackpack, BsBarChart, BsBasket2, BsCameraReels, BsCodeSlash, BsCoin, BsCreditCard2Back, BsCupHot, BsCupStraw, BsEnvelopeAt, BsFacebook, BsFileEarmarkTextFill, BsGraphUpArrow, BsHouseCheck, BsInstagram, BsLamp, BsLayers, BsLinkedin, BsLungs, BsPatchCheck, BsPatchQuestion, BsPeopleFill, BsPersonCheck, BsPinMap, BsPinMapFill, BsPinterest, BsShop, BsSuitHeart, BsTwitter, BsYelp } from "react-icons/bs";
-import { FaDumbbell, FaStar, FaStarHalfStroke } from "react-icons/fa6";
+import { BsBackpack, BsBarChart, BsBasket2, BsCameraReels, BsCodeSlash, BsCoin, BsCreditCard2Back, BsCupHot, BsEnvelopeAt, BsFacebook, BsFileEarmarkTextFill, BsGraphUpArrow, BsInstagram, BsLayers, BsLinkedin, BsLungs, BsPatchCheck, BsPatchQuestion, BsPeopleFill, BsPersonCheck, BsPinMap, BsPinMapFill, BsPinterest, BsShop, BsSuitHeart, BsTwitter, BsYelp } from "react-icons/bs";
+import { FaStar, FaStarHalfStroke } from "react-icons/fa6";
 
 export const categoryData = [
     {
@@ -19,282 +19,239 @@ export const listData = [
         title:'Pozo Izquierdo',
         desc:'The iconic bump and jump spot in the Canary Islands.',
         loction:'Gran Canaria, Spain',
-        status:'open',
-        call:'',
-        tag:'Fitness',
-        tagIcon:FaDumbbell,
-        tagIconStyle:'catIcon me-2 cats-1',
-        review:'0 Reviews',
-        rating:'good',
-        ratingRate:'4.5',
-        user:'/img/team-1.jpg',
-        instantBooking:false
+        rentalPlace: true,
+        tag:'Advanced Spot'
     },
     {
         id:12,
         slug:'gran-canaria/bahia-de-formas',
         image:'/images/spots/IMG_1185.jpeg',
-        user:'/img/team-1.jpg',
-        status:'open',
         featured:false,
         title:'Bahía de Formas',
         desc:'Flat water speed paradise',
-        call:'',
         loction:'Gran Canaria, Spain',
-        tag:'Fitness',
-        tagIcon:FaDumbbell,
-        tagIconStyle:'catIcon me-2 cats-1',
-        review:'0 Reviews',
-        rating:'good',
-        ratingRate:'4.5',
-        instantBooking:false
+        rentalPlace:false,
+        tag:'Fitness'
     },
     {
         id:2,
         slug:'tenerife/el-medano',
         image:'/images/spots/michal-hejmann--oBMHfF2R18-unsplash.jpg',
-        user:'/img/team-2.jpg',
-        status:'open',
         featured:true,
         title:'El Médano',
         desc:'Year-round trade wind mecca at the foot of Montaña Roja.',
-        call:'+42 515 635 6150',
         loction:'Tenerife, Spain',
-        tag:'Real Estate',
-        tagIcon:BsHouseCheck,
-        tagIconStyle:'catIcon me-2 cats-2',
-        review:'35 Reviews',
-        rating:'midium',
-        ratingRate:'4.3',
-        instantBooking:true
+        rentalPlace:false,
+        tag:'Real Estate'
     },
     {
         id:3,
         slug:'central-switzerland/fluelen',
         image:'/images/spots/isleten.jpg',
-        user:'/img/team-3.jpg',
-        status:'open',
         featured:true,
         title:'Flüelen',
         desc:'Foehn wind spot on the shores of Lake Uri.',
-        call:'',
         loction:'Flüelen, Uri, Switzerland',
-        tag:'Weddings',
-        tagIcon:BsLamp,
-        tagIconStyle:'catIcon me-2 cats-3',
-        review:'12 Reviews',
-        rating:'excellent',
-        ratingRate:'4.8',
-        instantBooking:false
+        rentalPlace:false,
+        tag:'Weddings'
     },
     {
         id:4,
         slug:'south-of-france/gruissan',
         image:'/images/spots/pierre-cazenave-kaufman-yLU-JkF5yjk-unsplash.jpg',
-        user:'/img/team-4.jpg',
-        status:'open',
         featured:true,
         title:'Gruissan',
         desc:'Shallow lagoon and open-sea spots powered by the Tramontane wind.',
-        call:'+42 515 635 6358',
         loction:'Gruissan, France',
-        tag:'Restaurant',
-        tagIcon:BsCupStraw,
-        tagIconStyle:'catIcon me-2 cats-4',
-        review:'72 Reviews',
-        rating:'good',
-        ratingRate:'4.6',
-        instantBooking:true
+        rentalPlace:false,
+        tag:'Restaurant'
     },
     {
         id:5,
         slug:'south-of-france/almanarre',
         image:'/images/spots/almanarre.png',
-        user:'/img/team-5.jpg',
-        status:'close',
         featured:true,
         title:'Almanarre',
         desc:'Long sandy beach with flat water and Mistral-driven side-shore wind.',
-        call:'+42 515 635 0210',
         loction:'Hyères, France',
-        tag:'Education',
-        tagIcon:FaDumbbell,
-        tagIconStyle:'catIcon me-2 cats-5',
-        review:'112 Reviews',
-        rating:'midium',
-        ratingRate:'4.2',
-        instantBooking:false
+        rentalPlace:false,
+        tag:'Education'
     },
     {
         id:6,
         slug:'garda-lake/torbole',
         image:'/images/spots/klaus-huber-QfMCwSfmiuc-unsplash.jpg',
-        user:'/img/team-6.jpg',
-        status:'open',
         featured:true,
         title:'Torbole',
         desc:'Alpine lake with reliable Ora and Peler thermal winds.',
-        call:'',
         loction:'Garda Lake, Italy',
-        tag:'Showroom',
-        tagIcon:BsBackpack,
-        tagIconStyle:'catIcon me-2 cats-6',
-        review:'52 Reviews',
-        rating:'excellent',
-        ratingRate:'4.8',
-        instantBooking:true
+        rentalPlace:false,
+        tag:'Showroom'
     },
     {
         id:11,
         slug:'fuerteventura/sotavento',
         image:'/images/spots/michele-marchesi-o3ys6oKoHtA-unsplash.jpg',
-        user:'/img/team-1.jpg',
-        status:'open',
         featured:true,
         title:'Sotavento',
         desc:'World-class freestyle and speed spot on Fuerteventura\'s south coast.',
-        call:'',
         loction:'Fuerteventura, Spain',
-        tag:'Fitness',
-        tagIcon:FaDumbbell,
-        tagIconStyle:'catIcon me-2 cats-1',
-        review:'0 Reviews',
-        rating:'good',
-        ratingRate:'4.5',
-        instantBooking:false
+        rentalPlace:false,
+        tag:'Fitness'
     },
     {
         id:10,
         slug:'crete/falasarna',
         image:'/images/spots/evangelos-mpikakis-Kq5zEZgz-MM-unsplash.jpg',
-        user:'/img/team-1.jpg',
-        status:'open',
         featured:false,
         title:'Falasarna',
         desc:'Sandy Meltemi paradise on the northwest tip of Crete.',
-        call:'',
         loction:'Crete, Greece',
-        tag:'Fitness',
-        tagIcon:FaDumbbell,
-        tagIconStyle:'catIcon me-2 cats-1',
-        review:'0 Reviews',
-        rating:'good',
-        ratingRate:'4.5',
-        instantBooking:false
+        rentalPlace:false,
+        tag:'Fitness'
     },
     {
         id:17,
         slug:'central-switzerland/isleten',
         image:'/images/spots/isleten.jpg',
-        user:'/img/team-1.jpg',
-        status:'open',
         featured:false,
         title:'Isleten',
         desc:'Foehn wind spot on Lake Uri in central Switzerland.',
-        call:'',
         loction:'Isenthal, Uri, Switzerland',
-        tag:'Fitness',
-        tagIcon:FaDumbbell,
-        tagIconStyle:'catIcon me-2 cats-1',
-        review:'0 Reviews',
-        rating:'good',
-        ratingRate:'4.5',
-        instantBooking:false
+        rentalPlace:false,
+        tag:'Fitness'
     },
     {
         id:18,
         slug:'central-switzerland/zug',
         image:'/images/spots/louis-droege-k6rwCx5oAS8-unsplash.jpg',
-        user:'/img/team-1.jpg',
-        status:'open',
         featured:false,
         title:'Zug',
         desc:'Thermal winds on Lake Zug in central Switzerland.',
-        call:'',
         loction:'Zug, Switzerland',
-        tag:'Fitness',
-        tagIcon:FaDumbbell,
-        tagIconStyle:'catIcon me-2 cats-1',
-        review:'0 Reviews',
-        rating:'good',
-        ratingRate:'4.0',
-        instantBooking:false
+        rentalPlace:false,
+        tag:'Fitness'
     },
     {
         id:19,
         slug:'central-switzerland/sisikon',
         image:'/images/spots/isleten.jpg',
-        user:'/img/team-1.jpg',
-        status:'open',
         featured:false,
         title:'Sisikon',
         desc:'Foehn wind spot on the eastern shore of the Urnersee.',
-        call:'',
         loction:'Uri, Switzerland',
-        tag:'Fitness',
-        tagIcon:FaDumbbell,
-        tagIconStyle:'catIcon me-2 cats-1',
-        review:'0 Reviews',
-        rating:'good',
-        ratingRate:'4.3',
-        instantBooking:false
+        rentalPlace:false,
+        tag:'Fitness'
     },
     {
         id:15,
         slug:'central-switzerland/sempach',
         image:'/images/spots/marvin-meyer-ua_tu9vqLAU-unsplash.jpg',
-        user:'/img/team-1.jpg',
-        status:'open',
         featured:false,
         title:'Sempach',
         desc:'Thermal and Bise winds on Lake Sempach in central Switzerland.',
-        call:'',
         loction:'Sempach, Lucerne, Switzerland',
-        tag:'Fitness',
-        tagIcon:FaDumbbell,
-        tagIconStyle:'catIcon me-2 cats-1',
-        review:'0 Reviews',
-        rating:'good',
-        ratingRate:'4.0',
-        instantBooking:false
+        rentalPlace:false,
+        tag:'Fitness'
     },
     {
         id:14,
         slug:'crete/elafonisi',
         image:'/images/spots/dimitris-kiriakakis-yGA8EEV2xtU-unsplash.jpg',
-        user:'/img/team-1.jpg',
-        status:'open',
         featured:false,
         title:'Elafonisi',
         desc:'Pink-sand lagoon with Meltemi winds on Crete\'s southwest coast.',
-        call:'',
         loction:'Crete, Greece',
-        tag:'Fitness',
-        tagIcon:FaDumbbell,
-        tagIconStyle:'catIcon me-2 cats-1',
-        review:'0 Reviews',
-        rating:'good',
-        ratingRate:'4.5',
-        instantBooking:false
+        rentalPlace:false,
+        tag:'Fitness'
     },
     {
-        id:13,
-        slug:'cadiz/tarifa',
+        id:20,
+        slug:'cadiz/balneario',
         image:'/images/spots/david-vives-zD6sFNw__u4-unsplash.jpg',
-        user:'/img/team-1.jpg',
-        status:'open',
+        featured:false,
+        title:'Balneario',
+        desc:'Mediterranean-side spot with flat water speed runs and hollow waves in Levante.',
+        loction:'Tarifa, Cádiz',
+        rentalPlace:false,
+        tag:'Advanced Spot'
+    },
+    {
+        id:21,
+        slug:'cadiz/campo',
+        image:'/images/spots/david-vives-zD6sFNw__u4-unsplash.jpg',
+        featured:false,
+        title:'Campo',
+        desc:'Flat water paradise with a 2 km speed strip along Los Lances beach.',
+        loction:'Tarifa, Cádiz',
+        rentalPlace:false,
+        tag:'Speed Spot'
+    },
+    {
+        id:22,
+        slug:'cadiz/agua',
+        image:'/images/spots/david-vives-zD6sFNw__u4-unsplash.jpg',
+        featured:false,
+        title:'Agua',
+        desc:'Less offshore than Campo with a shorter beach walk and a small bar for infrastructure.',
+        loction:'Tarifa, Cádiz',
+        rentalPlace:false,
+        tag:'All-round Spot'
+    },
+    {
+        id:23,
+        slug:'cadiz/arte-vida',
+        image:'/images/spots/david-vives-zD6sFNw__u4-unsplash.jpg',
+        featured:false,
+        title:'Arte Vida',
+        desc:'Beautiful Poniente spot with short car-to-water distance and stunning scenery.',
+        loction:'Tarifa, Cádiz',
+        rentalPlace:false,
+        tag:'Poniente Spot'
+    },
+    {
+        id:24,
+        slug:'cadiz/valdevaqueros',
+        image:'/images/spots/david-vives-zD6sFNw__u4-unsplash.jpg',
+        featured:false,
+        title:'Valdevaqueros',
+        desc:'Go-to Poniente spot with onshore waves, slalom conditions and beach lifestyle.',
+        loction:'Tarifa, Cádiz',
+        rentalPlace:false,
+        tag:'Wave Spot'
+    },
+    {
+        id:25,
+        slug:'cadiz/paloma-baja',
+        image:'/images/spots/david-vives-zD6sFNw__u4-unsplash.jpg',
+        featured:false,
+        title:'Paloma Baja',
+        desc:'Last spot in the bay with wave protection from the dune and Poniente acceleration.',
+        loction:'Tarifa, Cádiz',
+        rentalPlace:false,
+        tag:'All-round Spot'
+    },
+    {
+        id:26,
+        slug:'maui/hookipa',
+        image:'/images/spots/luke-scarpino-ngRNC_h2G8E-unsplash.jpg',
         featured:true,
-        title:'Tarifa',
-        desc:'Europe\'s wind capital where the Atlantic meets the Mediterranean.',
-        call:'',
-        loction:'Cadiz, Spain',
-        tag:'Fitness',
-        tagIcon:FaDumbbell,
-        tagIconStyle:'catIcon me-2 cats-1',
-        review:'0 Reviews',
-        rating:'good',
-        ratingRate:'4.7',
-        instantBooking:false
+        title:'Hookipa',
+        desc:'The world\'s most famous wave sailing spot on Maui\'s north shore.',
+        loction:'Maui, Hawaii',
+        rentalPlace:false,
+        tag:'Wave Spot'
+    },
+    {
+        id:27,
+        slug:'central-switzerland/silvaplana',
+        image:'/images/spots/uwe-conrad-MralC-Em90w-unsplash.jpg',
+        featured:false,
+        title:'Silvaplana',
+        desc:'Maloja wind funnelling through the Engadin valley onto Lake Silvaplana.',
+        loction:'Engadin, Switzerland',
+        rentalPlace:false,
+        tag:'Freestyle'
     },
 
 ]
@@ -410,67 +367,66 @@ export const footerLink3  = ['Trust & Safety','Investor Relations','Terms of Ser
 export const cityData = [
     {
         image:'/images/joel-rohland-ON5qDh2m-Ro-unsplash.jpg',
-        gridClass:'col-xl-6 col-lg-6 col-md-4 col-sm-6',
-        listing:'2 Spots',
+        big:true,
         name:'Gran Canaria',
         featured:true,
-        tag:['Pozo Izquierdo','Bahía de Formas']
+        spots:['Pozo Izquierdo','Bahía de Formas']
     },
     {
         image:'/images/cities/lina-bob-anCPcwhCQ28-unsplash.jpg',
-        gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
-        listing:'1 Spot',
+        big:false,
         name:'Tenerife',
         featured:true,
-        tag:['El Médano']
+        spots:['El Médano']
     },
     {
         image:'/images/spots/michele-marchesi-o3ys6oKoHtA-unsplash.jpg',
-        gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
-        listing:'1 Spot',
+        big:false,
         name:'Fuerteventura',
         featured:true,
-        tag:['Sotavento']
-    },
-    {
-        image:'/images/spots/david-vives-zD6sFNw__u4-unsplash.jpg',
-        gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
-        listing:'1 Spot',
-        name:'Cadiz',
-        featured:false,
-        tag:['Tarifa']
+        spots:['Sotavento']
     },
     {
         image:'/images/spots/almanarre.png',
-        gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
-        listing:'2 Spots',
+        big:false,
         name:'South of France',
         featured:true,
-        tag:['Gruissan','Almanarre']
+        spots:['Gruissan','Almanarre']
+    },
+    {
+        image:'/images/spots/david-vives-zD6sFNw__u4-unsplash.jpg',
+        big:true,
+        name:'Tarifa, Cádiz',
+        featured:true,
+        spots:['Balneario','Campo','Agua','Arte Vida','Valdevaqueros','Paloma Baja']
     },
     {
         image:'/images/spots/klaus-huber-QfMCwSfmiuc-unsplash.jpg',
-        gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
-        listing:'1 Spot',
+        big:false,
         name:'Garda Lake',
-        featured:false,
-        tag:['Torbole']
+        featured:true,
+        spots:['Torbole']
     },
     {
         image:'/images/spots/dimitris-kiriakakis-yGA8EEV2xtU-unsplash.jpg',
-        gridClass:'col-xl-3 col-lg-3 col-md-4 col-sm-6',
-        listing:'2 Spots',
+        big:false,
         name:'Crete',
         featured:true,
-        tag:['Falasarna','Elafonisi']
+        spots:['Falasarna','Elafonisi']
+    },
+    {
+        image:'/images/spots/luke-scarpino-ngRNC_h2G8E-unsplash.jpg',
+        big:false,
+        name:'Maui, Hawaii',
+        featured:true,
+        spots:['Hookipa']
     },
     {
         image:'/images/switzerland.png',
-        gridClass:'col-xl-6 col-lg-6 col-md-4 col-sm-6',
-        listing:'5 Spots',
+        big:true,
         name:'Switzerland',
         featured:true,
-        tag:['Flüelen','Isleten','Zug','Sisikon','Sempach']
+        spots:['Flüelen','Isleten','Zug','Sisikon','Sempach','Silvaplana']
     },
 ]
 

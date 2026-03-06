@@ -85,6 +85,9 @@ export default function GardaLake() {
                                     <div className="col-md-6">
                                         <YouTubeEmbed videoId="dWxWQlAPY9Y" title="Torbole Webcam" />
                                     </div>
+                                    <div className="col-md-6">
+                                        <img src="https://profiwetter.ch/wind_garda_en.png" alt="Garda Wind Map" className="img-fluid" />
+                                    </div>
                                 </div>
                             </div>
                             </div>

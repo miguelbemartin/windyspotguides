@@ -9,7 +9,7 @@ import FooterTop from '../../components/footer-top'
 import Footer from '../../components/footer/footer'
 import BackToTop from '../../components/back-to-top'
 
-import { listData } from '../../data/data'
+import { listData } from '../../data/data-example'
 
 import { BsEyeFill, BsGeoAlt, BsPatchCheckFill, BsShareFill, BsStar, BsSuitHeart, BsTelephone } from 'react-icons/bs'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6'

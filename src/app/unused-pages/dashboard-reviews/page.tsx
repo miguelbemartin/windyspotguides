@@ -6,7 +6,7 @@ import AdminNavbar from '../../components/navbar/admin-navbar'
 import AdminSidebar from '../../components/admin/admin-sidebar'
 import BackToTop from '../../components/back-to-top'
 
-import { adminReview } from '../../data/data'
+import { adminReview } from '../../data/data-example'
 
 import { BsArrowRight, BsReply, BsStarFill, BsStarHalf, BsX } from 'react-icons/bs'
 import { FaHeart } from 'react-icons/fa6'

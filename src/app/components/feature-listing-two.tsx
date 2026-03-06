@@ -5,29 +5,19 @@ import Image from 'next/image'
 
 import { listData } from '../data/data'
 
-import { BsEyeFill, BsGeoAlt, BsPatchCheckFill, BsShareFill, BsStar, BsSuitHeart, BsTelephone } from 'react-icons/bs'
+import { BsEyeFill, BsGeoAlt, BsPatchCheckFill, BsShareFill, BsStar, BsSuitHeart } from 'react-icons/bs'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import { IconType } from 'react-icons'
 
 interface ListData{
     id: number;
     image: string;
-    user: string;
-    status: string;
     featured: boolean;
     title: string;
     desc: string;
-    call: string;
     loction: string;
     tag: string;
-    tagIcon: IconType;
-    tagIconStyle: string;
-    review: string;
-    rating: string;
-    ratingRate: string;
-    instantBooking: boolean;
 }
 
 export default function FeaturedListingTwo() {
@@ -57,7 +47,6 @@ export default function FeaturedListingTwo() {
                         }}
                     >
                     {listData.map((item:ListData,index:number)=>{
-                        let Icon = item.tagIcon
                         return(
                             <SwiperSlide className="singleItem" key={index}>
                                 <div className="listingitem-container">
@@ -69,28 +58,22 @@ export default function FeaturedListingTwo() {
                                             <Link href="/single-listing-03" className="topLink">
                                                 <div className="position-absolute start-0 top-0 ms-3 mt-3 z-2">
                                                     <div className="d-flex align-items-center justify-content-start gap-2">
-                                                        {item.status === 'open' ? (<span className="badge badge-xs text-uppercase listOpen">Open</span>) :(<span className="badge badge-xs text-uppercase listClose">Closed</span>)}
-    
                                                         <span className="badge badge-xs badge-transparent">$$$</span>
-    
-                                                        {item.featured === true && 
+
+                                                        {item.featured === true &&
                                                             <span className="badge badge-xs badge-transparent"><BsStar className="mb-0 me-1"/>Featured</span>
                                                         }
                                                     </div>
                                                 </div>
                                                 <Image src={item.image} width={0} height={0} sizes='100vh' style={{width:'100%', height:'100%'}} className="img-fluid" alt="Listing Image"/>
-                                            </Link> 
+                                            </Link>
                                             <div className="opssListing position-absolute start-0 bottom-0 ms-3 mb-4 z-2">
                                                 <div className="d-flex align-items-center justify-content-between gap-2">
-                                                    <div className="listing-avatar">
-                                                        <Link href="/single-listing-03" className="avatarImg"><Image src={item.user} width={0} height={0} sizes='100vh' style={{width:'100%', height:'auto'}} className="img-fluid circle" alt="Avatar"/></Link>
-                                                    </div>
                                                     <div className="listing-details">
                                                         <h4 className="listingTitle"><Link href="/single-listing-03" className="titleLink">{item.title}<span className="verified"><BsPatchCheckFill className="bi bi-patch-check-fill m-0"/></span></Link></h4>
                                                         <div className="list-infos">
                                                             <div className="gap-3 mt-1">
                                                                 <div className="list-distance text-light d-flex align-items-center"><BsGeoAlt className="mb-0 me-2"/>{item.loction}</div>
-                                                                <div className="list-calls text-light hide-mob mt-1 d-flex align-items-center"><BsTelephone className="mb-0 me-2"/>{item.call}</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -102,7 +85,6 @@ export default function FeaturedListingTwo() {
                                                 <div className="catdWraps">
                                                     <div className="flex-start">
                                                         <Link href="/single-listing-03" className="d-flex align-items-center justify-content-start gap-2">
-                                                            <span className={item.tagIconStyle}><Icon className=""></Icon></span>
                                                             <span className="catTitle">{item.tag}</span>
                                                         </Link>
                                                     </div>

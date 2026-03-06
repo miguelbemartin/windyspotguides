@@ -8,7 +8,7 @@ import AdminSidebar from '../../components/admin/admin-sidebar'
 import RecentActivity from '../../components/admin/recent-activity'
 import BackToTop from '../../components/back-to-top'
 
-import { adminCounter, chatData, invoiceData } from '../../data/data'
+import { adminCounter, chatData, invoiceData } from '../../data/data-example'
 
 import CountUp from 'react-countup';
 import { IconType } from 'react-icons'

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { categoryData } from '../../data/data'
+import { categoryData } from '../../data/data-example'
 
 import { BsMouse, BsSearch } from 'react-icons/bs'
 

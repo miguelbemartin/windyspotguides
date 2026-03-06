@@ -11,7 +11,7 @@ import { IconType } from 'react-icons'
 import { FaArrowLeft, FaArrowRight, FaHeart, FaLocationDot, FaStar } from 'react-icons/fa6'
 import { BsBrowserChrome, BsCoin, BsEnvelope, BsEnvelopeCheckFill, BsFacebook, BsInstagram, BsLightningChargeFill, BsPatchCheckFill, BsPersonCheck, BsPhone, BsSend, BsStarFill, BsStarHalf, BsTelephone, BsTwitter, BsWhatsapp, BsYoutube } from 'react-icons/bs'
 
-import { listData } from '../../data/data'
+import { listData } from '../../data/data-example'
 
 interface ListData{
     id: number;

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { articles, helpData } from '../../data/data'
+import { articles, helpData } from '../../data/data-example'
 
 import { BsBoxArrowInRight } from 'react-icons/bs'
 

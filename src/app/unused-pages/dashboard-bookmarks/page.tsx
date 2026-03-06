@@ -6,7 +6,7 @@ import AdminNavbar from '../../components/navbar/admin-navbar'
 import AdminSidebar from '../../components/admin/admin-sidebar'
 import BackToTop from '../../components/back-to-top'
 
-import { adminListing } from '../../data/data'
+import { adminListing } from '../../data/data-example'
 
 import { BsStarFill, BsStarHalf, BsX } from 'react-icons/bs'
 import { FaHeart } from 'react-icons/fa6'

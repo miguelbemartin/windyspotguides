@@ -11,7 +11,7 @@ import BackToTop from '../../components/back-to-top'
 import { BsCoin, BsLightningChargeFill, BsPatchCheckFill, BsSearch, BsTelephone } from 'react-icons/bs'
 import { FaArrowLeft, FaArrowRight, FaHeart, FaLocationDot, FaStar } from 'react-icons/fa6'
 
-import { listData } from '../../data/data'
+import { listData } from '../../data/data-example'
 import { IconType } from 'react-icons'
 
 interface ListData{

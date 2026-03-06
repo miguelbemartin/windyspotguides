@@ -6,26 +6,16 @@ import Image from 'next/image'
 import { listData } from '../data/data'
 
 import { BsGeoAlt } from 'react-icons/bs'
-import { IconType } from 'react-icons'
 
 interface ListData{
     id: number;
     slug?: string;
     image: string;
-    user: string;
-    status: string;
     featured: boolean;
     title: string;
     desc: string;
-    call: string;
     loction: string;
     tag: string;
-    tagIcon: IconType;
-    tagIconStyle: string;
-    review: string;
-    rating: string;
-    ratingRate: string;
-    instantBooking: boolean;
 }
 
 export default function ExploreListingOne() {

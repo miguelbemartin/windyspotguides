@@ -9,7 +9,7 @@ import AdminSidebar from '../../components/admin/admin-sidebar'
 import { BsEmojiLaughing, BsPatchPlusFill, BsSend, BsX } from 'react-icons/bs'
 import { FaHeart } from 'react-icons/fa6'
 
-import { message } from '../../data/data'
+import { message } from '../../data/data-example'
 
 interface Message{
     id: number;

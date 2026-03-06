@@ -25,7 +25,7 @@ import FooterTop from '../../../components/footer-top'
 import Footer from '../../../components/footer/footer'
 import BackToTop from '../../../components/back-to-top'
 
-import { listData } from '../../../data/data'
+import { listData } from '../../../data/data-example'
 
 export default function SingleListingTwo() {
     const params = useParams();

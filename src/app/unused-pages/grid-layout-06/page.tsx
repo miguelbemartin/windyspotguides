@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { listData } from '../../data/data'
+import { listData } from '../../data/data-example'
 
 import {MdKeyboardArrowRight} from 'react-icons/md'
 import { BsGeoAlt, BsPatchCheckFill, BsStar, BsStarFill, BsSuitHeart, BsTelephone } from 'react-icons/bs'

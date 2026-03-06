@@ -24,7 +24,7 @@ import { FiArrowRight } from 'react-icons/fi'
 import { FaLocationDot } from 'react-icons/fa6'
 import { BsBriefcase, BsSendCheck, BsStarFill, BsStarHalf, BsX } from 'react-icons/bs'
 
-import { listData } from '../../../data/data'
+import { listData } from '../../../data/data-example'
 
 export default function SingleListingThree() {
     const params = useParams();

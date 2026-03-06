@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { listData } from '../../data/data'
+import { listData } from '../../data/data-example'
 
 import ThemNavbar from '../../components/navbar/them-navbar'
 import ListSidebarOne from '../../components/list-sidebar-one'

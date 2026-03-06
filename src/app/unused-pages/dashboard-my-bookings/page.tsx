@@ -5,7 +5,7 @@ import AdminNavbar from '../../components/navbar/admin-navbar'
 import AdminSidebar from '../../components/admin/admin-sidebar'
 import BackToTop from '../../components/back-to-top'
 
-import { bookingData } from '../../data/data'
+import { bookingData } from '../../data/data-example'
 
 import { BsCheck2Circle, BsEnvelopeDash, BsX } from 'react-icons/bs'
 import { FaHeart } from 'react-icons/fa6'

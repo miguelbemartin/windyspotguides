@@ -8,7 +8,7 @@ import BackToTop from '../../components/back-to-top'
 
 import CountUp from 'react-countup'
 
-import { earning } from '../../data/data'
+import { earning } from '../../data/data-example'
 
 import { FaHeart, FaMagnifyingGlass } from 'react-icons/fa6'
 import { BsBasket2, BsCoin, BsWallet } from 'react-icons/bs'

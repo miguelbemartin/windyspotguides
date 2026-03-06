@@ -7,7 +7,7 @@ import NavbarFull from '../../components/navbar/navbar-full'
 import Map from '../../components/map'
 import FilterTwo from '../../components/footer/filter-two'
 
-import { listData } from '../../data/data'
+import { listData } from '../../data/data-example'
 
 import { BsEyeFill, BsGeoAlt, BsPatchCheckFill, BsShareFill, BsStar, BsSuitHeart, BsTelephone } from 'react-icons/bs'
 import { FaArrowLeft, FaArrowRight, FaHeart } from 'react-icons/fa6'

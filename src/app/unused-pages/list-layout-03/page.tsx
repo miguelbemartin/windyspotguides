@@ -8,7 +8,7 @@ import Footer from '../../components/footer/footer'
 import FooterTop from '../../components/footer-top'
 import BackToTop from '../../components/back-to-top'
 
-import { listData } from '../../data/data'
+import { listData } from '../../data/data-example'
 
 import { BsCoin, BsLightningChargeFill, BsList, BsPatchCheckFill, BsSearch, BsTelephone, BsUiRadiosGrid } from 'react-icons/bs'
 import { FaArrowLeft, FaArrowRight, FaHeart, FaLocationDot, FaStar } from 'react-icons/fa6'
