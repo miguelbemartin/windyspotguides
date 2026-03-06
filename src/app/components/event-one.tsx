@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { eventData } from '../data/data'
 import { BsClock } from 'react-icons/bs'
 import { IconType } from 'react-icons'
 
@@ -16,6 +15,8 @@ interface EventData{
     title: string;
     time: string;
 }
+
+const eventData: EventData[] = []
 
 export default function EventOne() {
   return (

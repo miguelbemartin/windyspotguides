@@ -3,10 +3,10 @@ import Link from 'next/link'
 
 import { FaBriefcase, FaDribbble, FaFacebookF, FaGlobe, FaHeadset, FaInstagram, FaPaperPlane, FaTwitter } from 'react-icons/fa6'
 
-import NavbarDark from '../components/navbar/navbar-dark'
-import FooterTop from '../components/footer-top'
-import Footer from '../components/footer/footer'
-import BackToTop from '../components/back-to-top'
+import NavbarDark from '../../components/navbar/navbar-dark'
+import FooterTop from '../../components/footer-top'
+import Footer from '../../components/footer/footer'
+import BackToTop from '../../components/back-to-top'
 
 export default function ContactUs() {
   return (
